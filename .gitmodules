@@ -1,0 +1,3 @@
+[submodule "fortune-100-blm-dataset"]
+	path = fortune-100-blm-dataset
+	url = https://github.com/kmcelwee/fortune-100-blm-dataset
