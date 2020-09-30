@@ -1,8 +1,8 @@
-### Silent companies
+## Silent companies
 
-#### List
+### List
 
-There were 20 corporations that did not tweet about the protests: [^1]
+There were 20 corporations that did not tweet about the protests: [1](#1)
 
 | Corporation | Sector |
 | --- | --- |
@@ -28,62 +28,62 @@ There were 20 corporations that did not tweet about the protests: [^1]
 |Charter Communications|Telecommunications|
 
 
-#### Summary
+### Summary
 Some Fortune 100 companies stayed quiet about the protests on Twitter, either pretending they weren't happening at all, or stopping tweeting entirely, only to begin again a few weeks later. 
 
 Perhaps the company that best represents this trend is Oracle, who promptly stopped tweeting after protests began only to return a few weeks later, not mentioning the protests. Oracle has made no statement elsewhere in response to the protests. 
 
-![oracle-histogram](figures/tweet-histograms/Oracle.png)
+![oracle-histogram](../figures/tweet-histograms/Oracle.png)
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis veritatis totam commodi, repellendus cum, eum, et repudiandae voluptatem rem tempore ratione deserunt iste maiores dolore iure nisi assumenda officiis laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quibusdam ipsa exercitationem cupiditate tenetur placeat unde molestias voluptates ipsum repellat, velit magni beatae itaque? Molestias beatae adipisci pariatur, nisi nobis.
 
 Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Eaque ut ipsam corrupti quod pariatur repudiandae ad nesciunt, deleniti dolorem nostrum neque, magnam recusandae veniam tempore quis fugit architecto delectus ipsa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis velit labore dolorum, repellat voluptatem ipsam ex eligendi harum! Saepe obcaecati eligendi deleniti, quas modi aliquam magni, corporis amet! Odit, asperiores.
 
-#### Breakdown
+### Breakdown
 
-##### Lockheed Martin
-![LockheedMartin-histogram](figures/tweet-histograms/LockheedMartin.png)
-##### Northrop Grumman
-![northropgrumman-histogram](figures/tweet-histograms/northropgrumman.png)
-##### General Dynamics
-![generaldynamics-histogram](figures/tweet-histograms/generaldynamics.png)
-##### Raytheon Technologies
-![RaytheonTech-histogram](figures/tweet-histograms/RaytheonTech.png)
-##### Boeing
-![Boeing-histogram](figures/tweet-histograms/Boeing.png)
-##### Valero Energy
-![ValeroEnergy-histogram](figures/tweet-histograms/ValeroEnergy.png)
-##### Phillips 66
-![Phillips66Co-histogram](figures/tweet-histograms/Phillips66Co.png)
-##### Energy Transfer
-![EnergyTransfer-histogram](figures/tweet-histograms/EnergyTransfer.png)
-##### Exxon Mobil
-![exxonmobil-histogram](figures/tweet-histograms/exxonmobil.png)
-##### New York Life Insurance
-![NewYorkLife-histogram](figures/tweet-histograms/NewYorkLife.png)
-##### StoneX
+#### Lockheed Martin
+![LockheedMartin-histogram](../figures/tweet-histograms/LockheedMartin.png)
+#### Northrop Grumman
+![northropgrumman-histogram](../figures/tweet-histograms/northropgrumman.png)
+#### General Dynamics
+![generaldynamics-histogram](../figures/tweet-histograms/generaldynamics.png)
+#### Raytheon Technologies
+![RaytheonTech-histogram](../figures/tweet-histograms/RaytheonTech.png)
+#### Boeing
+![Boeing-histogram](../figures/tweet-histograms/Boeing.png)
+#### Valero Energy
+![ValeroEnergy-histogram](../figures/tweet-histograms/ValeroEnergy.png)
+#### Phillips 66
+![Phillips66Co-histogram](../figures/tweet-histograms/Phillips66Co.png)
+#### Energy Transfer
+![EnergyTransfer-histogram](../figures/tweet-histograms/EnergyTransfer.png)
+#### Exxon Mobil
+![exxonmobil-histogram](../figures/tweet-histograms/exxonmobil.png)
+#### New York Life Insurance
+![NewYorkLife-histogram](../figures/tweet-histograms/NewYorkLife.png)
+#### StoneX
 ![StoneX_Official-histogram](figures/tweet-histograms/StoneX_Official.png)
-##### Progressive
+#### Progressive
 ![Progressive-histogram](figures/tweet-histograms/Progressive.png)
-##### Publix Super Markets
+#### Publix Super Markets
 ![Publix-histogram](figures/tweet-histograms/Publix.png)
-##### Centene
+#### Centene
 ![Centene-histogram](figures/tweet-histograms/Centene.png)
-##### General Electric
+#### General Electric
 ![generalelectric-histogram](figures/tweet-histograms/generalelectric.png)
-##### Ford Motor
+#### Ford Motor
 ![Ford-histogram](figures/tweet-histograms/Ford.png)
-##### Best Buy
+#### Best Buy
 ![BestBuy-histogram](figures/tweet-histograms/BestBuy.png)
-##### Oracle
+#### Oracle
 ![Oracle-histogram](figures/tweet-histograms/Oracle.png)
-##### HP
+#### HP
 ![HP-histogram](figures/tweet-histograms/HP.png)
-##### Charter Communications
+#### Charter Communications
 ![GetSpectrum-histogram](figures/tweet-histograms/GetSpectrum.png)
 
-#### Scripts
-[1]
+### Scripts
+#### [1]
 ```python
 # generate table of quiet companies and their sectors
 from os.path import join as pjoin
