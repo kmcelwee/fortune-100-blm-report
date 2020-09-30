@@ -52,12 +52,12 @@ def generate_company_chart(company, handle, FIGURE_DIR, df_t):
     ax.set_ylabel('')
     ax.set_xlabel('')
     
-    plt.savefig(pjoin(FIGURE_DIR, f'{company}.png'), bbox_inches='tight')
+    plt.savefig(pjoin(FIGURE_DIR, f'{handle}.png'), bbox_inches='tight')
     plt.close()
 
 def main():
-    DATA_DIR = '../fortune-100-blm-dataset/data'
-    FIGURE_DIR = '../figures/tweet-histograms'
+    DATA_DIR = 'fortune-100-blm-dataset/data'
+    FIGURE_DIR = 'figures/tweet-histograms'
 
     converter = mdates.ConciseDateConverter()
     munits.registry[np.datetime64] = converter
