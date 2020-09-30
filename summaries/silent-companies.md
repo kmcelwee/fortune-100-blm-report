@@ -2,7 +2,7 @@
 
 ### List
 
-There were 20 corporations that did not tweet about the protests: [1](#1)
+There were 20 corporations that did not tweet about the protests: <sup>[1](#1)</sup>
 
 | Corporation | Sector |
 | --- | --- |
@@ -62,25 +62,25 @@ Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Eaque ut ipsam corrup
 #### New York Life Insurance
 ![NewYorkLife-histogram](../figures/tweet-histograms/NewYorkLife.png)
 #### StoneX
-![StoneX_Official-histogram](figures/tweet-histograms/StoneX_Official.png)
+![StoneX_Official-histogram](../figures/tweet-histograms/StoneX_Official.png)
 #### Progressive
-![Progressive-histogram](figures/tweet-histograms/Progressive.png)
+![Progressive-histogram](../figures/tweet-histograms/Progressive.png)
 #### Publix Super Markets
-![Publix-histogram](figures/tweet-histograms/Publix.png)
+![Publix-histogram](../figures/tweet-histograms/Publix.png)
 #### Centene
-![Centene-histogram](figures/tweet-histograms/Centene.png)
+![Centene-histogram](../figures/tweet-histograms/Centene.png)
 #### General Electric
-![generalelectric-histogram](figures/tweet-histograms/generalelectric.png)
+![generalelectric-histogram](../figures/tweet-histograms/generalelectric.png)
 #### Ford Motor
-![Ford-histogram](figures/tweet-histograms/Ford.png)
+![Ford-histogram](../figures/tweet-histograms/Ford.png)
 #### Best Buy
-![BestBuy-histogram](figures/tweet-histograms/BestBuy.png)
+![BestBuy-histogram](../figures/tweet-histograms/BestBuy.png)
 #### Oracle
-![Oracle-histogram](figures/tweet-histograms/Oracle.png)
+![Oracle-histogram](../figures/tweet-histograms/Oracle.png)
 #### HP
-![HP-histogram](figures/tweet-histograms/HP.png)
+![HP-histogram](../figures/tweet-histograms/HP.png)
 #### Charter Communications
-![GetSpectrum-histogram](figures/tweet-histograms/GetSpectrum.png)
+![GetSpectrum-histogram](../figures/tweet-histograms/GetSpectrum.png)
 
 ### Scripts
 #### [1]
