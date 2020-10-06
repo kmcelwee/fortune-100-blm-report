@@ -28,8 +28,8 @@ There were 19 corporations that did not tweet about the protests: <sup>[1](#1)</
 
 
 ### Summary
-k
-Searching through each of these organizations' press releases revealed seven corporations addressed the movement: Northrop Grumman, Raytheon Technologies, Boeing, Publix Super Markets, General Electric, Best Buy, and Charter Communications. Exxon Mobil and Progressive gave money but did not issue any kind of press release, either from their company or statement from their CEO. No news or statements were found for the remaining 12 corporations.
+
+Searching through each of these organizations' press releases revealed that seven corporations addressed the protests and racial inequality: Northrop Grumman, Raytheon Technologies, Boeing, Publix Super Markets, General Electric, Best Buy, and Charter Communications. Exxon Mobil and Progressive gave money to social justice organizations, but did not issue any kind of press release, either from their company or statement from their CEO. No news or statements were found for the remaining 12 corporations.
 
 ### Breakdown
 
@@ -48,7 +48,7 @@ No news or statement found.
 #### Raytheon Technologies
 ![RaytheonTech-histogram](../figures/tweet-histograms/RaytheonTech.png)
 The CEO released a memo to staff, the company didn't tweet about it.
-    - [Statement from CEO](https://www.rtx.com/en/News/2020/06/10/we-must-stand-together)
+- [Statement from CEO](https://www.rtx.com/en/News/2020/06/10/we-must-stand-together)
 - [ ] Have CEO tweets been tweeted by Raytheon in the past?
 
 #### Boeing
@@ -112,13 +112,15 @@ And the CEO outlined a plan to increase diversity, including a "$1MM contributio
 
 #### Ford Motor
 ![Ford-histogram](../figures/tweet-histograms/Ford.png)
-Ford did not post a press release after George Floyd's death and subsequent protests, but when [mistakenly linked](https://www.snopes.com/fact-check/ford-motor-company-defund-police/) to Black Lives Matter donations, Ford released a [statement](http://archive.is/RQubl), clarifying that "Ford is proud to be America’s long-time leader in producing police, emergency and first responder vehicles". In a press release, Ford claims to supply two-thirds of police vehicles.
+Ford did not post a press release after George Floyd's death and subsequent protests, but when [mistakenly linked](https://www.snopes.com/fact-check/ford-motor-company-defund-police/) to Black Lives Matter donations, Ford released a [statement](http://archive.is/RQubl), clarifying that "Ford is proud to be America’s long-time leader in producing police, emergency and first responder vehicles." [In a press release](https://media.ford.com/content/fordmedia/fna/us/en/news/2019/10/18/chicago-police-pick-hometown-favorite-ford.html), Ford claims to supply two-thirds of police vehicles.
 
 Ford released an [internal memo](https://www.clickondetroit.com/news/local/2020/07/12/employees-pressure-ford-to-stop-producing-police-vehicles/) (that was ultimately leaked) when their employees questioned Ford's relationship to police departments. The then-CEO Jim Hackett responded, “The issues plaguing police credibility have nothing to do with the vehicles they’re driving.”
 
 #### Best Buy
 ![BestBuy-histogram](../figures/tweet-histograms/BestBuy.png)
 Their CEO released a statement. Best Buy uses their Twitter account mostly for promotional purposes, so it isn't particularly surprising they didn't tweet about it. [BestBuy did not allow their employees to wear a "Black Lives Matter" mask.](https://www.nbclosangeles.com/news/local/best-buy-employee-says-he-was-told-to-stay-home-or-wear-a-different-mask-after-wearing-black-lives-matter-mask/2391883/)
+
+- [Statement from CEO](https://corporate.bestbuy.com/a-note-from-best-buys-ceo-we-will-do-better/)
 
 #### Oracle
 ![Oracle-histogram](../figures/tweet-histograms/Oracle.png)
