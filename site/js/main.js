@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // set the dimensions and margins of the graph
-  var margin = { top: 50, right: 60, bottom: 30, left: 60 },
+  var margin = { top: 35, right: 60, bottom: 30, left: 60 },
     width = 650 - margin.left - margin.right;
   // height = 200 - margin.top - margin.bottom;
 
@@ -21,8 +21,9 @@ $(document).ready(function () {
 
             // append the svg object to the body of the page
             var svg = d3
-              .select("#my_dataviz")
+              .select("#all_histograms")
               .append("svg")
+              .attr("class", "company_histogram")
               .attr("id", company_data["handle"])
               .attr("width", width + margin.left + margin.right)
               .attr("height", height + margin.top + margin.bottom)
@@ -56,7 +57,7 @@ $(document).ready(function () {
               .style("font-size", "16px")
               .style("font-weight", "bold")
               // .style("text-decoration", "underline")
-              .text(company);
+              .text(`@${handle} (${company})`);
 
             // Add Legend
             // svg.append("text")
@@ -113,7 +114,7 @@ $(document).ready(function () {
               })
 
               .on("mouseout", function (d) {
-                div.transition().duration(500).style("opacity", 0);
+                div.transition().duration(0).style("opacity", 0);
                 // expand on hover
                 d3.select(this).style("stroke", "none").attr("r", 3);
               });
