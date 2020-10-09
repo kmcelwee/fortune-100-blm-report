@@ -20,7 +20,8 @@ $(document).ready(function() {
 
   //Read the data
   d3.json("https://raw.githubusercontent.com/kmcelwee/fortune-100-blm-report/main/docs/histogram.json", function(data) {
-    company_data = data['AT&T']
+    var company = 'AT&T';
+    company_data = data[company];
     test = company_data;
 
     // Add X axis
@@ -37,6 +38,17 @@ $(document).ready(function() {
       .range([ height, 0]);
     svg.append("g")
       .call(d3.axisLeft(y));
+
+    // Add title
+    svg.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 0 + margin.top)
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px") 
+        .style("text-decoration", "underline")  
+        .text(company);
+
+    // Add Legend
 
     // Add dots
     svg.append('g')
