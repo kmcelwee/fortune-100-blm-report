@@ -60,9 +60,8 @@ def generate_company_chart(company, handle, FIGURE_DIR, df_t):
     output_columns = ['ID', 'Text', 'Racial Justice', 'count', 'date']
     df_o = df[output_columns]
     df_o['date'] = df_o['date'].astype(str)
+    df_o['ID'] = df_o['ID'].astype(str)
     return df_o.to_dict('records')
-
-def add_twitter_oembed():
 
 def main():
     DATA_DIR = 'fortune-100-blm-dataset/data'
