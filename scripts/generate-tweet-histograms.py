@@ -11,6 +11,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from datetime import date as dt
 import matplotlib as mpl
+import json
 mpl.rcParams['figure.dpi']= 300
 
 import matplotlib.units as munits
@@ -32,6 +33,7 @@ def generate_company_chart(company, handle, FIGURE_DIR, df_t):
     for date, l in t:
         new_col.extend(l)
     df['count'] = new_col
+
     
     colormap = ['lightgrey' if x == 0 else 'black' for x in pd.Categorical(df['Racial Justice']).codes]
     max_count = df['count'].max()
@@ -55,9 +57,17 @@ def generate_company_chart(company, handle, FIGURE_DIR, df_t):
     plt.savefig(pjoin(FIGURE_DIR, f'{handle}.png'), bbox_inches='tight')
     plt.close()
 
+    output_columns = ['ID', 'Text', 'Racial Justice', 'count', 'date']
+    df_o = df[output_columns]
+    df_o['date'] = df_o['date'].astype(str)
+    return df_o.to_dict('records')
+
+def add_twitter_oembed():
+
 def main():
     DATA_DIR = 'fortune-100-blm-dataset/data'
     FIGURE_DIR = 'figures/tweet-histograms'
+    HISTOGRAM_JSON_PATH = 'docs/histogram.json'
 
     converter = mdates.ConciseDateConverter()
     munits.registry[np.datetime64] = converter
@@ -67,8 +77,13 @@ def main():
     df_c = pd.read_csv(pjoin(DATA_DIR, 'fortune-100.csv')).dropna()
     df_t = pd.read_csv(pjoin(DATA_DIR, 'fortune-100-tweets.csv'), parse_dates=['Datetime'])
 
+    figure_json = {}
     for i, row in df_c.iterrows():
-        generate_company_chart(row['Corporation'], row['Handle'], FIGURE_DIR, df_t)
+        figure_json[row['Corporation']] = generate_company_chart(
+            row['Corporation'], row['Handle'], FIGURE_DIR, df_t)
+
+    with open(HISTOGRAM_JSON_PATH, 'w') as f:
+        json.dump(figure_json, f, indent=4)
 
 if __name__ == '__main__':
     main()
