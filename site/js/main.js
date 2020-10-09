@@ -28,7 +28,7 @@ $(document).ready(function () {
           oembed_json_t = oembed_json;
           var company = "AT&T";
           company_data = data[company];
-          test = company_data;
+          var handle = company_data['handle'];
 
           // Add X axis
           var x = d3.scaleTime().domain([minDate, maxDate]).range([0, width]);
@@ -38,7 +38,7 @@ $(document).ready(function () {
             .call(d3.axisBottom(x));
 
           // Add Y axis
-          var y = d3.scaleLinear().domain([0, 15]).range([height, 0]);
+          var y = d3.scaleLinear().domain([0, company_data['max_count'] + 4]).range([height, 0]);
           svg.append("g").call(d3.axisLeft(y));
 
           // Add title
@@ -68,7 +68,7 @@ $(document).ready(function () {
           svg
             .append("g")
             .selectAll("dot")
-            .data(company_data)
+            .data(company_data['tweets'])
             .enter()
             .append("a")
             .attr("xlink:href", (d) => `https://twitter.com/att/status/${d.ID}`)
@@ -85,7 +85,7 @@ $(document).ready(function () {
                 .html("<br>" + oembed_json[d.ID]["html"])
                 .style("left", d3.event.pageX + "px")
                 .style("top", d3.event.pageY - 28 + "px")
-                // Swap sides if
+                // Swap sides of tooltip if past halfway mark
                 .style("transform", (f) =>
                   x(new Date(d["date"])) > width / 2
                     ? "translateX(-305px)"
