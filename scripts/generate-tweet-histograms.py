@@ -61,7 +61,12 @@ def generate_company_chart(company, handle, FIGURE_DIR, df_t):
     df_o = df[output_columns]
     df_o['date'] = df_o['date'].astype(str)
     df_o['ID'] = df_o['ID'].astype(str)
-    return df_o.to_dict('records')
+
+    return {
+        'handle': handle,
+        'max_count': max_count,
+        'tweets': df_o.to_dict('records')
+    }
 
 def main():
     DATA_DIR = 'fortune-100-blm-dataset/data'
