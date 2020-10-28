@@ -9,7 +9,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url("../img/header-2000.png");
-    min-height: 100.1vh;
+    min-height: 100.5vh;
     background-color: black;
 }
 
@@ -41,7 +41,7 @@ body {
 
 #subtitle_text {
     font-family: acumin-pro, sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     font-style: normal;
     color: lightgrey;
     font-size: 15pt;
@@ -50,30 +50,24 @@ body {
 
 #title_container {
     max-width: 750px;
-    margin: 30px;
 }
 
 
-.directory_container {
-    padding-top: 100px;
+#directory_container {
+    width: 750px;
+    margin: 20px;
 }
 
-.directory_container a {
+#directory_container a {
     font-family: acumin-pro, sans-serif;
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
     color: white;
     text-decoration: none;
     font-size: 15pt;
 }
 
-.directory_container div:hover {
-    transform: scale(1.1);
-}
-
-.margin {
-    width: 100%;
-    background: black;
-    height: 4000px;
-    display: block;
+#directory_container a:hover {
+    font-weight: 400;
+    /*transform: scale(1.1);*/
 }
