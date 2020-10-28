@@ -14,6 +14,7 @@ import matplotlib as mpl
 import json
 mpl.rcParams['figure.dpi']= 300
 
+import matplotlib.patches as mpatches
 import matplotlib.units as munits
 import matplotlib.dates as mdates
 import datetime
@@ -42,6 +43,10 @@ def generate_company_chart(company, handle, FIGURE_DIR, df_t):
         x='date', y='count', c=colormap, figsize=(10, .15*(max_count+2)),  
         xlim=(dt(2020, 5, 24), dt(2020, 7, 26)), ylim=(0, max_count+2)
     )
+
+    rj_patch = mpatches.Patch(color='k', label='Racial Justice Tweet')
+    normal_patch = mpatches.Patch(color='lightgrey', label='Typical Tweet')
+    plt.legend(handles=[rj_patch, normal_patch], bbox_to_anchor=(1.3, 1.3))
 
     ax.spines['right'].set_visible(False)
     ax.spines['top'].set_visible(False)
