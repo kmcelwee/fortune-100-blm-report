@@ -1,0 +1,25 @@
+#all_histograms {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.company_histogram {
+   margin-bottom: 50px;
+}
+
+.tooltip {
+    right: 100px;  
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    padding: 10px;
+    font: 12px sans-serif;
+    background: black; 
+    border: 0px;
+    opacity: .8;
+    color: white;
+    border-radius: 8px;
+    pointer-events: none;
+}
