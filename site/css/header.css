@@ -4,18 +4,13 @@
     padding: 0px;
 }
 
-.background {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
-    width: 100%;
-}
-
 body {
-    background: black;
-    height: 100vh;
-    overflow: hidden;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../img/header-2000.png");
+    min-height: 100.1vh;
+    background-color: black;
 }
 
 .header {
@@ -26,14 +21,14 @@ body {
     height: 100vh;
     background: rgba(0, 0, 0, .75);
 
+    opacity: 0;
+    transition: opacity 500ms;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
     overflow: hidden;
-
-    /*display: none;*/
 }
 
 #title_text {

@@ -1,11 +1,10 @@
 $(document).ready(function() {
-    $(".background").css({'opacity': 1})
+    function fadeTitleCard() {
+      if (window.scrollY != 0) {
+          $('.header').css({'opacity': 1})
+      } else {
+          $('.header').css({'opacity': 0})
+      }
+    }
+    window.onscroll = function() {fadeTitleCard()};
 })
-
-function myFunction() {
-  console.log('hi')
-  if (document.body.scrollTop != 0) {
-      console.log('hi2')
-  }
-}
-window.onscroll = function() {myFunction()};
