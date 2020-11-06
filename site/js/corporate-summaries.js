@@ -1,19 +1,3 @@
-corp_section_template = `
-<div id="Walmart" class="corp_section">
-    <div class="corp_header">
-        <div class="corp_title">Walmart <a href="https://twitter.com/Walmart">(@Walmart)</a></div>
-        <div class="corp_sector">Sector: Retailing</div>
-    </div>
-    <div id="Walmart-histogram"></div>
-    <div class="corp_context">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam suscipit eum saepe dolorum, illo id dolores et laudantium eveniet explicabo provident, minus ratione, tempore quod nam, esse placeat quisquam. Asperiores.</p>
-        <ul>
-            <li><a href="https://google.com">CEO statement</a></li>
-            <li><a href="https://google.com">Corporate tweet statement</a></li>
-        </ul>
-    </div>
-</div>`
-
 function check_mobile() {
     var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
     if (mobile) { alert("This page is meant to be viewed on a desktop. Some features will not be available on a mobile device."); } 
@@ -24,7 +8,6 @@ $(document).ready(function () {
   // set the dimensions and margins of the graph
   var margin = { top: 35, right: 60, bottom: 30, left: 60 },
     width = 650 - margin.left - margin.right;
-  // height = 200 - margin.top - margin.bottom;
 
   var minDate = new Date("2020-05-24");
   var maxDate = new Date("2020-07-26");
@@ -67,25 +50,6 @@ $(document).ready(function () {
               .scaleLinear()
               .domain([0, company_data["max_count"]])
               .range([height, 0]);
-            // .style('visibility', 'hidden');
-            // svg.append("g").call(d3.axisLeft(y));
-
-            // Add title
-            // svg
-            //   .append("text")
-            //   .attr("x", 0)
-            //   .attr("y", -10)
-            //   // .attr("text-anchor", "middle")
-            //   .style("font-size", "16px")
-            //   .style("font-weight", "bold")
-            //   // .style("text-decoration", "underline")
-            //   .text(`@${handle} (${company})`);
-
-            // Add Legend
-            // svg.append("text")
-            //      .attr("x", width)
-            //      .attr("y", 0)
-            //      .text("Racial Justice Tweet")
 
             // Define the div for the tooltip
             var div = d3
