@@ -24,3 +24,8 @@
     border-radius: 8px;
     pointer-events: none;
 }
+
+#histogram-explainer {
+    max-width: 650px;
+    margin: 10px auto;
+}
