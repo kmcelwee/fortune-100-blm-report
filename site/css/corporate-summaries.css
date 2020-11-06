@@ -29,7 +29,7 @@
     text-align: center;
     width: 300px;
     padding: 10px;
-    font: 12px sans-serif;
+    font: 16px sans-serif;
     background: black; 
     border: 0px;
     opacity: .8;
@@ -58,3 +58,12 @@
 }
 
 .corp_context {}
+
+.tag-tooltip-container {
+    font-size: 16px;
+    padding: 5px;
+    font-weight: bold;
+}
+.badge {
+    margin: 5px;
+}

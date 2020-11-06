@@ -3,6 +3,21 @@ function check_mobile() {
     if (mobile) { alert("This page is meant to be viewed on a desktop. Some features will not be available on a mobile device."); } 
 }
 
+function parse_tags(tags) {
+  if (tags == '') { return ''; }
+  else {
+    tag_html = `<div class="tag-tooltip-container"> Tags: `
+    tags.split(';').forEach(function(tag) {
+      if (tag == 'Money') { tag_html += `<span class="badge badge-pill badge-success">Money</span>` }
+      if (tag == 'BLM') { tag_html += `<span class="badge badge-pill badge-light">BLM</span>` }
+      if (tag == 'Formal Statement') { tag_html += `<span class="badge badge-pill badge-primary">Formal Statement</span>` } 
+      if (tag == 'Juneteenth') { tag_html += `<span class="badge badge-pill badge-danger">Juneteenth</span>` }
+    })
+    tag_html += "</div>"
+    return tag_html
+  }
+}
+
 $(document).ready(function () {
   check_mobile();
 
@@ -93,7 +108,7 @@ $(document).ready(function () {
               .on("mouseover", function (d) {
                 div.transition().duration(200).style("opacity", 0.9);
                 div
-                  .html("<br>" + oembed_json[d.ID]["html"])
+                  .html("<br>" + oembed_json[d.ID]["html"] + parse_tags(d.tags))
                   .style("left", d3.event.pageX + "px")
                   .style("top", d3.event.pageY - 28 + "px")
                   // Swap sides of tooltip if past halfway mark
