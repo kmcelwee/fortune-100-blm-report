@@ -1,3 +1,19 @@
+corp_section_template = `
+<div id="Walmart" class="corp_section">
+    <div class="corp_header">
+        <div class="corp_title">Walmart <a href="https://twitter.com/Walmart">(@Walmart)</a></div>
+        <div class="corp_sector">Sector: Retailing</div>
+    </div>
+    <div id="Walmart-histogram"></div>
+    <div class="corp_context">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam suscipit eum saepe dolorum, illo id dolores et laudantium eveniet explicabo provident, minus ratione, tempore quod nam, esse placeat quisquam. Asperiores.</p>
+        <ul>
+            <li><a href="https://google.com">CEO statement</a></li>
+            <li><a href="https://google.com">Corporate tweet statement</a></li>
+        </ul>
+    </div>
+</div>`
+
 function check_mobile() {
     var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
     if (mobile) { alert("This page is meant to be viewed on a desktop. Some features will not be available on a mobile device."); } 
@@ -27,7 +43,7 @@ $(document).ready(function () {
 
             // append the svg object to the body of the page
             var svg = d3
-              .select("#all_histograms")
+              .select(`#${handle}-histogram`)
               .append("svg")
               .attr("class", "company_histogram")
               .attr("id", company_data["handle"])
@@ -55,15 +71,15 @@ $(document).ready(function () {
             // svg.append("g").call(d3.axisLeft(y));
 
             // Add title
-            svg
-              .append("text")
-              .attr("x", 0)
-              .attr("y", -10)
-              // .attr("text-anchor", "middle")
-              .style("font-size", "16px")
-              .style("font-weight", "bold")
-              // .style("text-decoration", "underline")
-              .text(`@${handle} (${company})`);
+            // svg
+            //   .append("text")
+            //   .attr("x", 0)
+            //   .attr("y", -10)
+            //   // .attr("text-anchor", "middle")
+            //   .style("font-size", "16px")
+            //   .style("font-weight", "bold")
+            //   // .style("text-decoration", "underline")
+            //   .text(`@${handle} (${company})`);
 
             // Add Legend
             // svg.append("text")
@@ -95,7 +111,7 @@ $(document).ready(function () {
               .attr("cy", (d) => y(d.count - 0.25))
               .attr("r", 3)
               .style("fill", (d) =>
-                d["Racial Justice"] ? "#000" : "lightgrey"
+                d["Racial Justice"] ? "#000" : "silver"
               )
               .style("transition", "200ms")
               .on("mouseover", function (d) {
@@ -114,7 +130,7 @@ $(document).ready(function () {
                 // expand on hover
                 d3.select(this)
                   .style("stroke", (d) =>
-                    d["Racial Justice"] ? "lightgrey" : "black"
+                    d["Racial Justice"] ? "silver" : "black"
                   )
                   .attr("r", 5);
               })

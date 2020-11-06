@@ -7,7 +7,7 @@
 }
 
 .company_histogram {
-   margin-bottom: 50px;
+    margin: 10px;
 }
 
 .tooltip {
@@ -28,4 +28,27 @@
 #histogram-explainer {
     max-width: 650px;
     margin: 10px auto;
+}
+
+
+.corp_section {
+    max-width: 650px;
+    margin: 10px auto;
+}
+
+.corp_header {
+}
+
+.corp_title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.corp_sector {
+    font-size: 16px;
+    color: grey;
+}
+
+.corp_context {
+
 }
