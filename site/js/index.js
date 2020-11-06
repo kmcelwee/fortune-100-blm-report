@@ -6,7 +6,9 @@ function fadeTitleCard() {
   }
 }
 
+window.onscroll = fadeTitleCard;
+
 $(document).ready(function() {
+    $('html, body').animate({scrollTop: 2}, 500);
     fadeTitleCard();
-    window.onscroll = function() {fadeTitleCard()};
 })
