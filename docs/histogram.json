@@ -2,6 +2,7 @@
     "Walmart": {
         "handle": "Walmart",
         "max_count": 4,
+        "sector": "Retailing",
         "tweets": [
             {
                 "ID": "1265336705621450753",
@@ -358,6 +359,7 @@
     "Amazon.com": {
         "handle": "amazon",
         "max_count": 2,
+        "sector": "Retailing",
         "tweets": [
             {
                 "ID": "1265266163665252359",
@@ -476,6 +478,7 @@
     "Exxon Mobil": {
         "handle": "exxonmobil",
         "max_count": 3,
+        "sector": "Energy",
         "tweets": [
             {
                 "ID": "1265659034008420353",
@@ -601,6 +604,7 @@
     "CVS Health": {
         "handle": "cvspharmacy",
         "max_count": 4,
+        "sector": "Health Care",
         "tweets": [
             {
                 "ID": "1264894034012704768",
@@ -859,6 +863,7 @@
     "UnitedHealth Group": {
         "handle": "UnitedHealthGrp",
         "max_count": 19,
+        "sector": "Health Care",
         "tweets": [
             {
                 "ID": "1264911600261173254",
@@ -1313,6 +1318,7 @@
     "McKesson": {
         "handle": "McKesson",
         "max_count": 2,
+        "sector": "Health Care",
         "tweets": [
             {
                 "ID": "1264913690069012481",
@@ -1515,6 +1521,7 @@
     "AT&T": {
         "handle": "ATT",
         "max_count": 11,
+        "sector": "Telecommunications",
         "tweets": [
             {
                 "ID": "1264722860892999680",
@@ -3754,6 +3761,7 @@
     "Alphabet": {
         "handle": "Google",
         "max_count": 7,
+        "sector": "Technology",
         "tweets": [
             {
                 "ID": "1264888952655241216",
@@ -4586,6 +4594,7 @@
     "Ford Motor": {
         "handle": "Ford",
         "max_count": 3,
+        "sector": "Motor Vehicles & Parts",
         "tweets": [
             {
                 "ID": "1265311777304313857",
@@ -4858,6 +4867,7 @@
     "Cigna": {
         "handle": "Cigna",
         "max_count": 25,
+        "sector": "Health Care",
         "tweets": [
             {
                 "ID": "1264919251216928768",
@@ -5641,6 +5651,7 @@
     "Chevron": {
         "handle": "Chevron",
         "max_count": 3,
+        "sector": "Energy",
         "tweets": [
             {
                 "ID": "1266421553102753793",
@@ -5864,6 +5875,7 @@
     "Cardinal Health": {
         "handle": "cardinalhealth",
         "max_count": 2,
+        "sector": "Health Care",
         "tweets": [
             {
                 "ID": "1266051775645220866",
@@ -5961,6 +5973,7 @@
     "General Motors": {
         "handle": "GM",
         "max_count": 2,
+        "sector": "Motor Vehicles & Parts",
         "tweets": [
             {
                 "ID": "1265356083050110976",
@@ -6303,6 +6316,7 @@
     "Walgreens Boots Alliance": {
         "handle": "Walgreens",
         "max_count": 2,
+        "sector": "Food & Drug Stores",
         "tweets": [
             {
                 "ID": "1266033101911793669",
@@ -6365,6 +6379,7 @@
     "Verizon Communications": {
         "handle": "Verizon",
         "max_count": 27,
+        "sector": "Telecommunications",
         "tweets": [
             {
                 "ID": "1265278417034936320",
@@ -8695,6 +8710,7 @@
     "Microsoft": {
         "handle": "Microsoft",
         "max_count": 29,
+        "sector": "Technology",
         "tweets": [
             {
                 "ID": "1265310518413160448",
@@ -10073,6 +10089,7 @@
     "Marathon Petroleum": {
         "handle": "MarathonPetroCo",
         "max_count": 4,
+        "sector": "Energy",
         "tweets": [
             {
                 "ID": "1264923766431367169",
@@ -10520,6 +10537,7 @@
     "Kroger": {
         "handle": "kroger",
         "max_count": 2,
+        "sector": "Food & Drug Stores",
         "tweets": [
             {
                 "ID": "1265262848537759745",
@@ -10638,6 +10656,7 @@
     "Fannie Mae": {
         "handle": "FannieMae",
         "max_count": 1,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1264918917056790528",
@@ -10756,6 +10775,7 @@
     "Bank of America": {
         "handle": "BankofAmerica",
         "max_count": 3,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1264926819213611008",
@@ -11105,6 +11125,7 @@
     "Home Depot": {
         "handle": "HomeDepot",
         "max_count": 2,
+        "sector": "Retailing",
         "tweets": [
             {
                 "ID": "1264953842690596865",
@@ -11181,6 +11202,7 @@
     "Phillips 66": {
         "handle": "Phillips66Co",
         "max_count": 3,
+        "sector": "Energy",
         "tweets": [
             {
                 "ID": "1265687033181339648",
@@ -11341,6 +11363,7 @@
     "Comcast": {
         "handle": "comcast",
         "max_count": 5,
+        "sector": "Telecommunications",
         "tweets": [
             {
                 "ID": "1265767960339251203",
@@ -11550,6 +11573,7 @@
     "Anthem": {
         "handle": "AnthemBCBS",
         "max_count": 2,
+        "sector": "Health Care",
         "tweets": [
             {
                 "ID": "1265739293110173697",
@@ -11626,6 +11650,7 @@
     "Wells Fargo": {
         "handle": "WellsFargo",
         "max_count": 4,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1264922811979706368",
@@ -11877,6 +11902,7 @@
     "Citigroup": {
         "handle": "Citi",
         "max_count": 10,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1264823518996443136",
@@ -12856,6 +12882,7 @@
     "Valero Energy": {
         "handle": "ValeroEnergy",
         "max_count": 2,
+        "sector": "Energy",
         "tweets": [
             {
                 "ID": "1265340224445562880",
@@ -13044,6 +13071,7 @@
     "General Electric": {
         "handle": "generalelectric",
         "max_count": 3,
+        "sector": "Industrials",
         "tweets": [
             {
                 "ID": "1265352135224549378",
@@ -13309,6 +13337,7 @@
     "Dell Technologies": {
         "handle": "DellTech",
         "max_count": 5,
+        "sector": "Technology",
         "tweets": [
             {
                 "ID": "1264917892308615170",
@@ -14232,6 +14261,7 @@
     "Johnson & Johnson": {
         "handle": "JNJNews",
         "max_count": 7,
+        "sector": "Health Care",
         "tweets": [
             {
                 "ID": "1264919147466481665",
@@ -14966,6 +14996,7 @@
     "State Farm Insurance": {
         "handle": "StateFarm",
         "max_count": 4,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1264904116846944256",
@@ -15364,6 +15395,7 @@
     "Target": {
         "handle": "Target",
         "max_count": 1,
+        "sector": "Retailing",
         "tweets": [
             {
                 "ID": "1265305424594698240",
@@ -15461,6 +15493,7 @@
     "IBM": {
         "handle": "IBM",
         "max_count": 3,
+        "sector": "Technology",
         "tweets": [
             {
                 "ID": "1265308301379751938",
@@ -15754,6 +15787,7 @@
     "Raytheon Technologies": {
         "handle": "RaytheonTech",
         "max_count": 5,
+        "sector": "Aerospace & Defense",
         "tweets": [
             {
                 "ID": "1264904053655552000",
@@ -16096,6 +16130,7 @@
     "Boeing": {
         "handle": "Boeing",
         "max_count": 2,
+        "sector": "Aerospace & Defense",
         "tweets": [
             {
                 "ID": "1264919198926548994",
@@ -16214,6 +16249,7 @@
     "Freddie Mac": {
         "handle": "FreddieMac",
         "max_count": 2,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1265713360034725893",
@@ -16444,6 +16480,7 @@
     "Centene": {
         "handle": "Centene",
         "max_count": 1,
+        "sector": "Health Care",
         "tweets": [
             {
                 "ID": "1264921917536026624",
@@ -16590,6 +16627,7 @@
     "United Parcel Service": {
         "handle": "UPS",
         "max_count": 6,
+        "sector": "Transportation",
         "tweets": [
             {
                 "ID": "1264949101688508423",
@@ -17177,6 +17215,7 @@
     "Lowe's": {
         "handle": "Lowes",
         "max_count": 2,
+        "sector": "Retailing",
         "tweets": [
             {
                 "ID": "1265004698148495360",
@@ -17316,6 +17355,7 @@
     "Intel": {
         "handle": "intel",
         "max_count": 3,
+        "sector": "Technology",
         "tweets": [
             {
                 "ID": "1266136082032267270",
@@ -17532,6 +17572,7 @@
     "Facebook": {
         "handle": "Facebook",
         "max_count": 2,
+        "sector": "Technology",
         "tweets": [
             {
                 "ID": "1273720800659468288",
@@ -17601,6 +17642,7 @@
     "FedEx": {
         "handle": "FedEx",
         "max_count": 3,
+        "sector": "Transportation",
         "tweets": [
             {
                 "ID": "1265311353637449733",
@@ -17810,6 +17852,7 @@
     "MetLife": {
         "handle": "MetLife",
         "max_count": 4,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1264873747342909443",
@@ -18166,6 +18209,7 @@
     "Walt Disney": {
         "handle": "Disney",
         "max_count": 7,
+        "sector": "Media",
         "tweets": [
             {
                 "ID": "1264949437849382912",
@@ -18809,6 +18853,7 @@
     "Procter & Gamble": {
         "handle": "ProcterGamble",
         "max_count": 16,
+        "sector": "Household Products",
         "tweets": [
             {
                 "ID": "1265308220299661315",
@@ -21167,6 +21212,7 @@
     "PepsiCo": {
         "handle": "PepsiCo",
         "max_count": 11,
+        "sector": "Food Beverages & Tobacco",
         "tweets": [
             {
                 "ID": "1264927969774129152",
@@ -21488,6 +21534,7 @@
     "Humana": {
         "handle": "Humana",
         "max_count": 2,
+        "sector": "Health Care",
         "tweets": [
             {
                 "ID": "1265410893212463106",
@@ -21599,6 +21646,7 @@
     "Prudential Financial": {
         "handle": "Prudential",
         "max_count": 3,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1264909297143742466",
@@ -21808,6 +21856,7 @@
     "Archer Daniels Midland": {
         "handle": "TradeADMIS",
         "max_count": 9,
+        "sector": "Food Beverages & Tobacco",
         "tweets": [
             {
                 "ID": "1264897924460425216",
@@ -23578,6 +23627,7 @@
     "Albertsons": {
         "handle": "Albertsons",
         "max_count": 2,
+        "sector": "Food & Drug Stores",
         "tweets": [
             {
                 "ID": "1264949441355640832",
@@ -23647,6 +23697,7 @@
     "Sysco": {
         "handle": "Sysco",
         "max_count": 5,
+        "sector": "Wholesalers",
         "tweets": [
             {
                 "ID": "1264985068814118912",
@@ -24136,6 +24187,7 @@
     "Lockheed Martin": {
         "handle": "LockheedMartin",
         "max_count": 7,
+        "sector": "Aerospace & Defense",
         "tweets": [
             {
                 "ID": "1264709715336011776",
@@ -24597,6 +24649,7 @@
     "HP": {
         "handle": "HP",
         "max_count": 3,
+        "sector": "Technology",
         "tweets": [
             {
                 "ID": "1264952520759263233",
@@ -24729,6 +24782,7 @@
     "Goldman Sachs Group": {
         "handle": "GoldmanSachs",
         "max_count": 11,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1264904133422784512",
@@ -27122,6 +27176,7 @@
     "Energy Transfer": {
         "handle": "EnergyTransfer",
         "max_count": 6,
+        "sector": "Energy",
         "tweets": [
             {
                 "ID": "1264919527181160448",
@@ -27688,6 +27743,7 @@
     "Morgan Stanley": {
         "handle": "MorganStanley",
         "max_count": 5,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1265023504317022210",
@@ -28499,6 +28555,7 @@
     "Caterpillar": {
         "handle": "CaterpillarInc",
         "max_count": 6,
+        "sector": "Industrials",
         "tweets": [
             {
                 "ID": "1265107906145501184",
@@ -29177,6 +29234,7 @@
     "Cisco Systems": {
         "handle": "Cisco",
         "max_count": 13,
+        "sector": "Technology",
         "tweets": [
             {
                 "ID": "1264710405794009090",
@@ -30905,6 +30963,7 @@
     "Pfizer": {
         "handle": "pfizer",
         "max_count": 7,
+        "sector": "Health Care",
         "tweets": [
             {
                 "ID": "1264909838636789771",
@@ -31751,6 +31810,7 @@
     "AIG": {
         "handle": "AIGinsurance",
         "max_count": 4,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1265736645682384904",
@@ -31890,6 +31950,7 @@
     "American Express": {
         "handle": "AmericanExpress",
         "max_count": 2,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1264994648482865153",
@@ -32092,6 +32153,7 @@
     "Delta Air Lines": {
         "handle": "Delta",
         "max_count": 3,
+        "sector": "Transportation",
         "tweets": [
             {
                 "ID": "1265322791164919809",
@@ -32252,6 +32314,7 @@
     "Merck": {
         "handle": "Merck",
         "max_count": 5,
+        "sector": "Health Care",
         "tweets": [
             {
                 "ID": "1265232856479076354",
@@ -32895,6 +32958,7 @@
     "American Airlines Group": {
         "handle": "AmericanAir",
         "max_count": 4,
+        "sector": "Transportation",
         "tweets": [
             {
                 "ID": "1264919333580537858",
@@ -33335,6 +33399,7 @@
     "Charter Communications": {
         "handle": "GetSpectrum",
         "max_count": 2,
+        "sector": "Telecommunications",
         "tweets": [
             {
                 "ID": "1265659027922358273",
@@ -33418,6 +33483,7 @@
     "Allstate": {
         "handle": "Allstate",
         "max_count": 1,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1273616459177111553",
@@ -33494,6 +33560,7 @@
     "New York Life Insurance": {
         "handle": "NewYorkLife",
         "max_count": 2,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1265631529264459778",
@@ -33696,6 +33763,7 @@
     "Nationwide": {
         "handle": "Nationwide",
         "max_count": 3,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1264891469330034688",
@@ -33933,6 +34001,7 @@
     "Best Buy": {
         "handle": "BestBuy",
         "max_count": 1,
+        "sector": "Retailing",
         "tweets": [
             {
                 "ID": "1264916757233283072",
@@ -34065,6 +34134,7 @@
     "United Airlines Holdings": {
         "handle": "united",
         "max_count": 3,
+        "sector": "Transportation",
         "tweets": [
             {
                 "ID": "1265380978140250112",
@@ -34330,6 +34400,7 @@
     "Liberty Mutual Insurance Group": {
         "handle": "LibertyMutual",
         "max_count": 1,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1264911599812345861",
@@ -34406,6 +34477,7 @@
     "Dow": {
         "handle": "DowNewsroom",
         "max_count": 10,
+        "sector": "Chemicals",
         "tweets": [
             {
                 "ID": "1264959813462700032",
@@ -34818,6 +34890,7 @@
     "Tyson Foods": {
         "handle": "TysonFoods",
         "max_count": 2,
+        "sector": "Food Beverages & Tobacco",
         "tweets": [
             {
                 "ID": "1265079844108460034",
@@ -35069,6 +35142,7 @@
     "TIAA": {
         "handle": "TIAA",
         "max_count": 5,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1265296596172001286",
@@ -35530,6 +35604,7 @@
     "Oracle": {
         "handle": "Oracle",
         "max_count": 6,
+        "sector": "Technology",
         "tweets": [
             {
                 "ID": "1265010012495187968",
@@ -36299,6 +36374,7 @@
     "General Dynamics": {
         "handle": "generaldynamics",
         "max_count": 10,
+        "sector": "Aerospace & Defense",
         "tweets": [
             {
                 "ID": "1266095153061781508",
@@ -36781,6 +36857,7 @@
     "Deere": {
         "handle": "JohnDeere",
         "max_count": 2,
+        "sector": "Industrials",
         "tweets": [
             {
                 "ID": "1264904098438090753",
@@ -36906,6 +36983,7 @@
     "Nike": {
         "handle": "Nike",
         "max_count": 1,
+        "sector": "Apparel",
         "tweets": [
             {
                 "ID": "1266502116463370241",
@@ -36933,6 +37011,7 @@
     "Progressive": {
         "handle": "Progressive",
         "max_count": 3,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1265085071477932033",
@@ -37296,6 +37375,7 @@
     "Publix Super Markets": {
         "handle": "Publix",
         "max_count": 2,
+        "sector": "Food & Drug Stores",
         "tweets": [
             {
                 "ID": "1274688548055195648",
@@ -37351,6 +37431,7 @@
     "Coca-Cola": {
         "handle": "CocaCola",
         "max_count": 5,
+        "sector": "Food Beverages & Tobacco",
         "tweets": [
             {
                 "ID": "1265387232426364928",
@@ -37455,6 +37536,7 @@
     "Massachusetts Mutual Life Insurance": {
         "handle": "massmutual",
         "max_count": 2,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1265718161262866432",
@@ -37664,6 +37746,7 @@
     "Tech Data": {
         "handle": "Tech_Data",
         "max_count": 7,
+        "sector": "Wholesalers",
         "tweets": [
             {
                 "ID": "1265643937387237376",
@@ -38433,6 +38516,7 @@
     "Honeywell International": {
         "handle": "honeywell",
         "max_count": 3,
+        "sector": "Industrials",
         "tweets": [
             {
                 "ID": "1266420309755912193",
@@ -38565,6 +38649,7 @@
     "ConocoPhillips": {
         "handle": "conocophillips",
         "max_count": 3,
+        "sector": "Energy",
         "tweets": [
             {
                 "ID": "1264904338897428480",
@@ -38802,6 +38887,7 @@
     "USAA": {
         "handle": "USAA",
         "max_count": 4,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1265387528447721472",
@@ -39158,6 +39244,7 @@
     "Exelon": {
         "handle": "Exelon",
         "max_count": 10,
+        "sector": "Energy",
         "tweets": [
             {
                 "ID": "1264934037606596610",
@@ -39745,6 +39832,7 @@
     "Northrop Grumman": {
         "handle": "northropgrumman",
         "max_count": 3,
+        "sector": "Aerospace & Defense",
         "tweets": [
             {
                 "ID": "1264768182570680320",
@@ -39863,6 +39951,7 @@
     "Capital One Financial": {
         "handle": "CapitalOne",
         "max_count": 2,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1264710514371956741",
@@ -40002,6 +40091,7 @@
     "AbbVie": {
         "handle": "abbvie",
         "max_count": 5,
+        "sector": "Health Care",
         "tweets": [
             {
                 "ID": "1264934285754195969",
@@ -40561,6 +40651,7 @@
     "StoneX": {
         "handle": "StoneX_Official",
         "max_count": 23,
+        "sector": "Financials",
         "tweets": [
             {
                 "ID": "1264911596989542400",

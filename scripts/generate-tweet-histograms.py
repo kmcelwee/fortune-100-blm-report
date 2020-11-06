@@ -19,7 +19,7 @@ import matplotlib.units as munits
 import matplotlib.dates as mdates
 import datetime
 
-def generate_company_chart(company, handle, FIGURE_DIR, df_t):
+def generate_company_chart(company, handle, sector, FIGURE_DIR, df_t):
     df = df_t[(df_t['Corporation'] == company)].copy()
     df = df[~pd.isna(df['Racial Justice'])]
     df['date'] = df['Datetime'].dt.date
@@ -70,6 +70,7 @@ def generate_company_chart(company, handle, FIGURE_DIR, df_t):
     return {
         'handle': handle,
         'max_count': max_count,
+        'sector': sector,
         'tweets': df_o.to_dict('records')
     }
 
@@ -89,7 +90,7 @@ def main():
     figure_json = {}
     for i, row in df_c.iterrows():
         figure_json[row['Corporation']] = generate_company_chart(
-            row['Corporation'], row['Handle'], FIGURE_DIR, df_t)
+            row['Corporation'], row['Handle'], row['Sector'], FIGURE_DIR, df_t)
 
     with open(HISTOGRAM_JSON_PATH, 'w') as f:
         json.dump(figure_json, f, indent=4)
