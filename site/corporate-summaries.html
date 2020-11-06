@@ -55,13 +55,13 @@
 
         <div id="control_box">
             <div>
-                <label for="hide_context">Hide text summary.</label>
+                <label for="hide_context">Hide text summary</label>
                 <input type="checkbox" id="hide_context" name="hide_context" value="hide_context" autocomplete="off">
             </div>
             <div>
                 <label for="sector_filter">Filter by sector</label>
                 <select name="sector_filter" id="sector_filter" autocomplete="off">
-                    <option>Any</option>
+                    <option></option>
                     <option>Retailing</option>
                     <option>Energy</option>
                     <option>Technology</option>
@@ -84,7 +84,7 @@
         </div>
 
         <div id="all_histograms">
-            <div id="Walmart" class="corp_section">
+            <div id="Walmart" class="corp_section" sector="Retailing">
                 <div class="corp_header">
                     <div class="corp_title">Walmart <a href="https://twitter.com/Walmart">(@Walmart)</a></div>
                     <div class="corp_sector">Sector: Retailing</div>
@@ -97,7 +97,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="amazon" class="corp_section">
+            </div><div id="amazon" class="corp_section" sector="Retailing">
                 <div class="corp_header">
                     <div class="corp_title">Amazon.com <a href="https://twitter.com/amazon">(@amazon)</a></div>
                     <div class="corp_sector">Sector: Retailing</div>
@@ -110,7 +110,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="exxonmobil" class="corp_section">
+            </div><div id="exxonmobil" class="corp_section" sector="Energy">
                 <div class="corp_header">
                     <div class="corp_title">Exxon Mobil <a href="https://twitter.com/exxonmobil">(@exxonmobil)</a></div>
                     <div class="corp_sector">Sector: Energy</div>
@@ -123,7 +123,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="cvspharmacy" class="corp_section">
+            </div><div id="cvspharmacy" class="corp_section" sector="Health Care">
                 <div class="corp_header">
                     <div class="corp_title">CVS Health <a href="https://twitter.com/cvspharmacy">(@cvspharmacy)</a></div>
                     <div class="corp_sector">Sector: Health Care</div>
@@ -136,7 +136,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="UnitedHealthGrp" class="corp_section">
+            </div><div id="UnitedHealthGrp" class="corp_section" sector="Health Care">
                 <div class="corp_header">
                     <div class="corp_title">UnitedHealth Group <a href="https://twitter.com/UnitedHealthGrp">(@UnitedHealthGrp)</a></div>
                     <div class="corp_sector">Sector: Health Care</div>
@@ -149,7 +149,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="McKesson" class="corp_section">
+            </div><div id="McKesson" class="corp_section" sector="Health Care">
                 <div class="corp_header">
                     <div class="corp_title">McKesson <a href="https://twitter.com/McKesson">(@McKesson)</a></div>
                     <div class="corp_sector">Sector: Health Care</div>
@@ -162,7 +162,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="ATT" class="corp_section">
+            </div><div id="ATT" class="corp_section" sector="Telecommunications">
                 <div class="corp_header">
                     <div class="corp_title">AT&T <a href="https://twitter.com/ATT">(@ATT)</a></div>
                     <div class="corp_sector">Sector: Telecommunications</div>
@@ -175,7 +175,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Google" class="corp_section">
+            </div><div id="Google" class="corp_section" sector="Technology">
                 <div class="corp_header">
                     <div class="corp_title">Alphabet <a href="https://twitter.com/Google">(@Google)</a></div>
                     <div class="corp_sector">Sector: Technology</div>
@@ -188,7 +188,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Ford" class="corp_section">
+            </div><div id="Ford" class="corp_section" sector="Motor Vehicles & Parts">
                 <div class="corp_header">
                     <div class="corp_title">Ford Motor <a href="https://twitter.com/Ford">(@Ford)</a></div>
                     <div class="corp_sector">Sector: Motor Vehicles & Parts</div>
@@ -201,7 +201,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Cigna" class="corp_section">
+            </div><div id="Cigna" class="corp_section" sector="Health Care">
                 <div class="corp_header">
                     <div class="corp_title">Cigna <a href="https://twitter.com/Cigna">(@Cigna)</a></div>
                     <div class="corp_sector">Sector: Health Care</div>
@@ -214,7 +214,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Chevron" class="corp_section">
+            </div><div id="Chevron" class="corp_section" sector="Energy">
                 <div class="corp_header">
                     <div class="corp_title">Chevron <a href="https://twitter.com/Chevron">(@Chevron)</a></div>
                     <div class="corp_sector">Sector: Energy</div>
@@ -227,7 +227,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="cardinalhealth" class="corp_section">
+            </div><div id="cardinalhealth" class="corp_section" sector="Health Care">
                 <div class="corp_header">
                     <div class="corp_title">Cardinal Health <a href="https://twitter.com/cardinalhealth">(@cardinalhealth)</a></div>
                     <div class="corp_sector">Sector: Health Care</div>
@@ -240,7 +240,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="GM" class="corp_section">
+            </div><div id="GM" class="corp_section" sector="Motor Vehicles & Parts">
                 <div class="corp_header">
                     <div class="corp_title">General Motors <a href="https://twitter.com/GM">(@GM)</a></div>
                     <div class="corp_sector">Sector: Motor Vehicles & Parts</div>
@@ -253,7 +253,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Walgreens" class="corp_section">
+            </div><div id="Walgreens" class="corp_section" sector="Food & Drug Stores">
                 <div class="corp_header">
                     <div class="corp_title">Walgreens Boots Alliance <a href="https://twitter.com/Walgreens">(@Walgreens)</a></div>
                     <div class="corp_sector">Sector: Food & Drug Stores</div>
@@ -266,7 +266,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Verizon" class="corp_section">
+            </div><div id="Verizon" class="corp_section" sector="Telecommunications">
                 <div class="corp_header">
                     <div class="corp_title">Verizon Communications <a href="https://twitter.com/Verizon">(@Verizon)</a></div>
                     <div class="corp_sector">Sector: Telecommunications</div>
@@ -279,7 +279,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Microsoft" class="corp_section">
+            </div><div id="Microsoft" class="corp_section" sector="Technology">
                 <div class="corp_header">
                     <div class="corp_title">Microsoft <a href="https://twitter.com/Microsoft">(@Microsoft)</a></div>
                     <div class="corp_sector">Sector: Technology</div>
@@ -292,7 +292,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="MarathonPetroCo" class="corp_section">
+            </div><div id="MarathonPetroCo" class="corp_section" sector="Energy">
                 <div class="corp_header">
                     <div class="corp_title">Marathon Petroleum <a href="https://twitter.com/MarathonPetroCo">(@MarathonPetroCo)</a></div>
                     <div class="corp_sector">Sector: Energy</div>
@@ -305,7 +305,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="kroger" class="corp_section">
+            </div><div id="kroger" class="corp_section" sector="Food & Drug Stores">
                 <div class="corp_header">
                     <div class="corp_title">Kroger <a href="https://twitter.com/kroger">(@kroger)</a></div>
                     <div class="corp_sector">Sector: Food & Drug Stores</div>
@@ -318,7 +318,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="FannieMae" class="corp_section">
+            </div><div id="FannieMae" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">Fannie Mae <a href="https://twitter.com/FannieMae">(@FannieMae)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -331,7 +331,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="BankofAmerica" class="corp_section">
+            </div><div id="BankofAmerica" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">Bank of America <a href="https://twitter.com/BankofAmerica">(@BankofAmerica)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -344,7 +344,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="HomeDepot" class="corp_section">
+            </div><div id="HomeDepot" class="corp_section" sector="Retailing">
                 <div class="corp_header">
                     <div class="corp_title">Home Depot <a href="https://twitter.com/HomeDepot">(@HomeDepot)</a></div>
                     <div class="corp_sector">Sector: Retailing</div>
@@ -357,7 +357,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Phillips66Co" class="corp_section">
+            </div><div id="Phillips66Co" class="corp_section" sector="Energy">
                 <div class="corp_header">
                     <div class="corp_title">Phillips 66 <a href="https://twitter.com/Phillips66Co">(@Phillips66Co)</a></div>
                     <div class="corp_sector">Sector: Energy</div>
@@ -370,7 +370,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="comcast" class="corp_section">
+            </div><div id="comcast" class="corp_section" sector="Telecommunications">
                 <div class="corp_header">
                     <div class="corp_title">Comcast <a href="https://twitter.com/comcast">(@comcast)</a></div>
                     <div class="corp_sector">Sector: Telecommunications</div>
@@ -383,7 +383,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="AnthemBCBS" class="corp_section">
+            </div><div id="AnthemBCBS" class="corp_section" sector="Health Care">
                 <div class="corp_header">
                     <div class="corp_title">Anthem <a href="https://twitter.com/AnthemBCBS">(@AnthemBCBS)</a></div>
                     <div class="corp_sector">Sector: Health Care</div>
@@ -396,7 +396,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="WellsFargo" class="corp_section">
+            </div><div id="WellsFargo" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">Wells Fargo <a href="https://twitter.com/WellsFargo">(@WellsFargo)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -409,7 +409,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Citi" class="corp_section">
+            </div><div id="Citi" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">Citigroup <a href="https://twitter.com/Citi">(@Citi)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -422,7 +422,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="ValeroEnergy" class="corp_section">
+            </div><div id="ValeroEnergy" class="corp_section" sector="Energy">
                 <div class="corp_header">
                     <div class="corp_title">Valero Energy <a href="https://twitter.com/ValeroEnergy">(@ValeroEnergy)</a></div>
                     <div class="corp_sector">Sector: Energy</div>
@@ -435,7 +435,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="generalelectric" class="corp_section">
+            </div><div id="generalelectric" class="corp_section" sector="Industrials">
                 <div class="corp_header">
                     <div class="corp_title">General Electric <a href="https://twitter.com/generalelectric">(@generalelectric)</a></div>
                     <div class="corp_sector">Sector: Industrials</div>
@@ -448,7 +448,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="DellTech" class="corp_section">
+            </div><div id="DellTech" class="corp_section" sector="Technology">
                 <div class="corp_header">
                     <div class="corp_title">Dell Technologies <a href="https://twitter.com/DellTech">(@DellTech)</a></div>
                     <div class="corp_sector">Sector: Technology</div>
@@ -461,7 +461,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="JNJNews" class="corp_section">
+            </div><div id="JNJNews" class="corp_section" sector="Health Care">
                 <div class="corp_header">
                     <div class="corp_title">Johnson & Johnson <a href="https://twitter.com/JNJNews">(@JNJNews)</a></div>
                     <div class="corp_sector">Sector: Health Care</div>
@@ -474,7 +474,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="StateFarm" class="corp_section">
+            </div><div id="StateFarm" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">State Farm Insurance <a href="https://twitter.com/StateFarm">(@StateFarm)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -487,7 +487,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Target" class="corp_section">
+            </div><div id="Target" class="corp_section" sector="Retailing">
                 <div class="corp_header">
                     <div class="corp_title">Target <a href="https://twitter.com/Target">(@Target)</a></div>
                     <div class="corp_sector">Sector: Retailing</div>
@@ -500,7 +500,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="IBM" class="corp_section">
+            </div><div id="IBM" class="corp_section" sector="Technology">
                 <div class="corp_header">
                     <div class="corp_title">IBM <a href="https://twitter.com/IBM">(@IBM)</a></div>
                     <div class="corp_sector">Sector: Technology</div>
@@ -513,7 +513,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="RaytheonTech" class="corp_section">
+            </div><div id="RaytheonTech" class="corp_section" sector="Aerospace & Defense">
                 <div class="corp_header">
                     <div class="corp_title">Raytheon Technologies <a href="https://twitter.com/RaytheonTech">(@RaytheonTech)</a></div>
                     <div class="corp_sector">Sector: Aerospace & Defense</div>
@@ -526,7 +526,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Boeing" class="corp_section">
+            </div><div id="Boeing" class="corp_section" sector="Aerospace & Defense">
                 <div class="corp_header">
                     <div class="corp_title">Boeing <a href="https://twitter.com/Boeing">(@Boeing)</a></div>
                     <div class="corp_sector">Sector: Aerospace & Defense</div>
@@ -539,7 +539,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="FreddieMac" class="corp_section">
+            </div><div id="FreddieMac" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">Freddie Mac <a href="https://twitter.com/FreddieMac">(@FreddieMac)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -552,7 +552,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Centene" class="corp_section">
+            </div><div id="Centene" class="corp_section" sector="Health Care">
                 <div class="corp_header">
                     <div class="corp_title">Centene <a href="https://twitter.com/Centene">(@Centene)</a></div>
                     <div class="corp_sector">Sector: Health Care</div>
@@ -565,7 +565,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="UPS" class="corp_section">
+            </div><div id="UPS" class="corp_section" sector="Transportation">
                 <div class="corp_header">
                     <div class="corp_title">United Parcel Service <a href="https://twitter.com/UPS">(@UPS)</a></div>
                     <div class="corp_sector">Sector: Transportation</div>
@@ -578,7 +578,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Lowes" class="corp_section">
+            </div><div id="Lowes" class="corp_section" sector="Retailing">
                 <div class="corp_header">
                     <div class="corp_title">Lowe's <a href="https://twitter.com/Lowes">(@Lowes)</a></div>
                     <div class="corp_sector">Sector: Retailing</div>
@@ -591,7 +591,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="intel" class="corp_section">
+            </div><div id="intel" class="corp_section" sector="Technology">
                 <div class="corp_header">
                     <div class="corp_title">Intel <a href="https://twitter.com/intel">(@intel)</a></div>
                     <div class="corp_sector">Sector: Technology</div>
@@ -604,7 +604,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Facebook" class="corp_section">
+            </div><div id="Facebook" class="corp_section" sector="Technology">
                 <div class="corp_header">
                     <div class="corp_title">Facebook <a href="https://twitter.com/Facebook">(@Facebook)</a></div>
                     <div class="corp_sector">Sector: Technology</div>
@@ -617,7 +617,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="FedEx" class="corp_section">
+            </div><div id="FedEx" class="corp_section" sector="Transportation">
                 <div class="corp_header">
                     <div class="corp_title">FedEx <a href="https://twitter.com/FedEx">(@FedEx)</a></div>
                     <div class="corp_sector">Sector: Transportation</div>
@@ -630,7 +630,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="MetLife" class="corp_section">
+            </div><div id="MetLife" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">MetLife <a href="https://twitter.com/MetLife">(@MetLife)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -643,7 +643,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Disney" class="corp_section">
+            </div><div id="Disney" class="corp_section" sector="Media">
                 <div class="corp_header">
                     <div class="corp_title">Walt Disney <a href="https://twitter.com/Disney">(@Disney)</a></div>
                     <div class="corp_sector">Sector: Media</div>
@@ -656,7 +656,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="ProcterGamble" class="corp_section">
+            </div><div id="ProcterGamble" class="corp_section" sector="Household Products">
                 <div class="corp_header">
                     <div class="corp_title">Procter & Gamble <a href="https://twitter.com/ProcterGamble">(@ProcterGamble)</a></div>
                     <div class="corp_sector">Sector: Household Products</div>
@@ -669,7 +669,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="PepsiCo" class="corp_section">
+            </div><div id="PepsiCo" class="corp_section" sector="Food Beverages & Tobacco">
                 <div class="corp_header">
                     <div class="corp_title">PepsiCo <a href="https://twitter.com/PepsiCo">(@PepsiCo)</a></div>
                     <div class="corp_sector">Sector: Food Beverages & Tobacco</div>
@@ -682,7 +682,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Humana" class="corp_section">
+            </div><div id="Humana" class="corp_section" sector="Health Care">
                 <div class="corp_header">
                     <div class="corp_title">Humana <a href="https://twitter.com/Humana">(@Humana)</a></div>
                     <div class="corp_sector">Sector: Health Care</div>
@@ -695,7 +695,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Prudential" class="corp_section">
+            </div><div id="Prudential" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">Prudential Financial <a href="https://twitter.com/Prudential">(@Prudential)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -708,7 +708,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="TradeADMIS" class="corp_section">
+            </div><div id="TradeADMIS" class="corp_section" sector="Food Beverages & Tobacco">
                 <div class="corp_header">
                     <div class="corp_title">Archer Daniels Midland <a href="https://twitter.com/TradeADMIS">(@TradeADMIS)</a></div>
                     <div class="corp_sector">Sector: Food Beverages & Tobacco</div>
@@ -721,7 +721,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Albertsons" class="corp_section">
+            </div><div id="Albertsons" class="corp_section" sector="Food & Drug Stores">
                 <div class="corp_header">
                     <div class="corp_title">Albertsons <a href="https://twitter.com/Albertsons">(@Albertsons)</a></div>
                     <div class="corp_sector">Sector: Food & Drug Stores</div>
@@ -734,7 +734,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Sysco" class="corp_section">
+            </div><div id="Sysco" class="corp_section" sector="Wholesalers">
                 <div class="corp_header">
                     <div class="corp_title">Sysco <a href="https://twitter.com/Sysco">(@Sysco)</a></div>
                     <div class="corp_sector">Sector: Wholesalers</div>
@@ -747,7 +747,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="LockheedMartin" class="corp_section">
+            </div><div id="LockheedMartin" class="corp_section" sector="Aerospace & Defense">
                 <div class="corp_header">
                     <div class="corp_title">Lockheed Martin <a href="https://twitter.com/LockheedMartin">(@LockheedMartin)</a></div>
                     <div class="corp_sector">Sector: Aerospace & Defense</div>
@@ -760,7 +760,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="HP" class="corp_section">
+            </div><div id="HP" class="corp_section" sector="Technology">
                 <div class="corp_header">
                     <div class="corp_title">HP <a href="https://twitter.com/HP">(@HP)</a></div>
                     <div class="corp_sector">Sector: Technology</div>
@@ -773,7 +773,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="GoldmanSachs" class="corp_section">
+            </div><div id="GoldmanSachs" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">Goldman Sachs Group <a href="https://twitter.com/GoldmanSachs">(@GoldmanSachs)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -786,7 +786,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="EnergyTransfer" class="corp_section">
+            </div><div id="EnergyTransfer" class="corp_section" sector="Energy">
                 <div class="corp_header">
                     <div class="corp_title">Energy Transfer <a href="https://twitter.com/EnergyTransfer">(@EnergyTransfer)</a></div>
                     <div class="corp_sector">Sector: Energy</div>
@@ -799,7 +799,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="MorganStanley" class="corp_section">
+            </div><div id="MorganStanley" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">Morgan Stanley <a href="https://twitter.com/MorganStanley">(@MorganStanley)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -812,7 +812,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="CaterpillarInc" class="corp_section">
+            </div><div id="CaterpillarInc" class="corp_section" sector="Industrials">
                 <div class="corp_header">
                     <div class="corp_title">Caterpillar <a href="https://twitter.com/CaterpillarInc">(@CaterpillarInc)</a></div>
                     <div class="corp_sector">Sector: Industrials</div>
@@ -825,7 +825,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Cisco" class="corp_section">
+            </div><div id="Cisco" class="corp_section" sector="Technology">
                 <div class="corp_header">
                     <div class="corp_title">Cisco Systems <a href="https://twitter.com/Cisco">(@Cisco)</a></div>
                     <div class="corp_sector">Sector: Technology</div>
@@ -838,7 +838,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="pfizer" class="corp_section">
+            </div><div id="pfizer" class="corp_section" sector="Health Care">
                 <div class="corp_header">
                     <div class="corp_title">Pfizer <a href="https://twitter.com/pfizer">(@pfizer)</a></div>
                     <div class="corp_sector">Sector: Health Care</div>
@@ -851,7 +851,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="AIGinsurance" class="corp_section">
+            </div><div id="AIGinsurance" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">AIG <a href="https://twitter.com/AIGinsurance">(@AIGinsurance)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -864,7 +864,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="AmericanExpress" class="corp_section">
+            </div><div id="AmericanExpress" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">American Express <a href="https://twitter.com/AmericanExpress">(@AmericanExpress)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -877,7 +877,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Delta" class="corp_section">
+            </div><div id="Delta" class="corp_section" sector="Transportation">
                 <div class="corp_header">
                     <div class="corp_title">Delta Air Lines <a href="https://twitter.com/Delta">(@Delta)</a></div>
                     <div class="corp_sector">Sector: Transportation</div>
@@ -890,7 +890,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Merck" class="corp_section">
+            </div><div id="Merck" class="corp_section" sector="Health Care">
                 <div class="corp_header">
                     <div class="corp_title">Merck <a href="https://twitter.com/Merck">(@Merck)</a></div>
                     <div class="corp_sector">Sector: Health Care</div>
@@ -903,7 +903,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="AmericanAir" class="corp_section">
+            </div><div id="AmericanAir" class="corp_section" sector="Transportation">
                 <div class="corp_header">
                     <div class="corp_title">American Airlines Group <a href="https://twitter.com/AmericanAir">(@AmericanAir)</a></div>
                     <div class="corp_sector">Sector: Transportation</div>
@@ -916,7 +916,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="GetSpectrum" class="corp_section">
+            </div><div id="GetSpectrum" class="corp_section" sector="Telecommunications">
                 <div class="corp_header">
                     <div class="corp_title">Charter Communications <a href="https://twitter.com/GetSpectrum">(@GetSpectrum)</a></div>
                     <div class="corp_sector">Sector: Telecommunications</div>
@@ -929,7 +929,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Allstate" class="corp_section">
+            </div><div id="Allstate" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">Allstate <a href="https://twitter.com/Allstate">(@Allstate)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -942,7 +942,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="NewYorkLife" class="corp_section">
+            </div><div id="NewYorkLife" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">New York Life Insurance <a href="https://twitter.com/NewYorkLife">(@NewYorkLife)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -955,7 +955,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Nationwide" class="corp_section">
+            </div><div id="Nationwide" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">Nationwide <a href="https://twitter.com/Nationwide">(@Nationwide)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -968,7 +968,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="BestBuy" class="corp_section">
+            </div><div id="BestBuy" class="corp_section" sector="Retailing">
                 <div class="corp_header">
                     <div class="corp_title">Best Buy <a href="https://twitter.com/BestBuy">(@BestBuy)</a></div>
                     <div class="corp_sector">Sector: Retailing</div>
@@ -981,7 +981,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="united" class="corp_section">
+            </div><div id="united" class="corp_section" sector="Transportation">
                 <div class="corp_header">
                     <div class="corp_title">United Airlines Holdings <a href="https://twitter.com/united">(@united)</a></div>
                     <div class="corp_sector">Sector: Transportation</div>
@@ -994,7 +994,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="LibertyMutual" class="corp_section">
+            </div><div id="LibertyMutual" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">Liberty Mutual Insurance Group <a href="https://twitter.com/LibertyMutual">(@LibertyMutual)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -1007,7 +1007,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="DowNewsroom" class="corp_section">
+            </div><div id="DowNewsroom" class="corp_section" sector="Chemicals">
                 <div class="corp_header">
                     <div class="corp_title">Dow <a href="https://twitter.com/DowNewsroom">(@DowNewsroom)</a></div>
                     <div class="corp_sector">Sector: Chemicals</div>
@@ -1020,7 +1020,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="TysonFoods" class="corp_section">
+            </div><div id="TysonFoods" class="corp_section" sector="Food Beverages & Tobacco">
                 <div class="corp_header">
                     <div class="corp_title">Tyson Foods <a href="https://twitter.com/TysonFoods">(@TysonFoods)</a></div>
                     <div class="corp_sector">Sector: Food Beverages & Tobacco</div>
@@ -1033,7 +1033,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="TIAA" class="corp_section">
+            </div><div id="TIAA" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">TIAA <a href="https://twitter.com/TIAA">(@TIAA)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -1046,7 +1046,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Oracle" class="corp_section">
+            </div><div id="Oracle" class="corp_section" sector="Technology">
                 <div class="corp_header">
                     <div class="corp_title">Oracle <a href="https://twitter.com/Oracle">(@Oracle)</a></div>
                     <div class="corp_sector">Sector: Technology</div>
@@ -1059,7 +1059,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="generaldynamics" class="corp_section">
+            </div><div id="generaldynamics" class="corp_section" sector="Aerospace & Defense">
                 <div class="corp_header">
                     <div class="corp_title">General Dynamics <a href="https://twitter.com/generaldynamics">(@generaldynamics)</a></div>
                     <div class="corp_sector">Sector: Aerospace & Defense</div>
@@ -1072,7 +1072,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="JohnDeere" class="corp_section">
+            </div><div id="JohnDeere" class="corp_section" sector="Industrials">
                 <div class="corp_header">
                     <div class="corp_title">Deere <a href="https://twitter.com/JohnDeere">(@JohnDeere)</a></div>
                     <div class="corp_sector">Sector: Industrials</div>
@@ -1085,7 +1085,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Nike" class="corp_section">
+            </div><div id="Nike" class="corp_section" sector="Apparel">
                 <div class="corp_header">
                     <div class="corp_title">Nike <a href="https://twitter.com/Nike">(@Nike)</a></div>
                     <div class="corp_sector">Sector: Apparel</div>
@@ -1098,7 +1098,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Progressive" class="corp_section">
+            </div><div id="Progressive" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">Progressive <a href="https://twitter.com/Progressive">(@Progressive)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -1111,7 +1111,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Publix" class="corp_section">
+            </div><div id="Publix" class="corp_section" sector="Food & Drug Stores">
                 <div class="corp_header">
                     <div class="corp_title">Publix Super Markets <a href="https://twitter.com/Publix">(@Publix)</a></div>
                     <div class="corp_sector">Sector: Food & Drug Stores</div>
@@ -1124,7 +1124,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="CocaCola" class="corp_section">
+            </div><div id="CocaCola" class="corp_section" sector="Food Beverages & Tobacco">
                 <div class="corp_header">
                     <div class="corp_title">Coca-Cola <a href="https://twitter.com/CocaCola">(@CocaCola)</a></div>
                     <div class="corp_sector">Sector: Food Beverages & Tobacco</div>
@@ -1137,7 +1137,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="massmutual" class="corp_section">
+            </div><div id="massmutual" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">Massachusetts Mutual Life Insurance <a href="https://twitter.com/massmutual">(@massmutual)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -1150,7 +1150,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Tech_Data" class="corp_section">
+            </div><div id="Tech_Data" class="corp_section" sector="Wholesalers">
                 <div class="corp_header">
                     <div class="corp_title">Tech Data <a href="https://twitter.com/Tech_Data">(@Tech_Data)</a></div>
                     <div class="corp_sector">Sector: Wholesalers</div>
@@ -1163,7 +1163,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="honeywell" class="corp_section">
+            </div><div id="honeywell" class="corp_section" sector="Industrials">
                 <div class="corp_header">
                     <div class="corp_title">Honeywell International <a href="https://twitter.com/honeywell">(@honeywell)</a></div>
                     <div class="corp_sector">Sector: Industrials</div>
@@ -1176,7 +1176,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="conocophillips" class="corp_section">
+            </div><div id="conocophillips" class="corp_section" sector="Energy">
                 <div class="corp_header">
                     <div class="corp_title">ConocoPhillips <a href="https://twitter.com/conocophillips">(@conocophillips)</a></div>
                     <div class="corp_sector">Sector: Energy</div>
@@ -1189,7 +1189,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="USAA" class="corp_section">
+            </div><div id="USAA" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">USAA <a href="https://twitter.com/USAA">(@USAA)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -1202,7 +1202,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="Exelon" class="corp_section">
+            </div><div id="Exelon" class="corp_section" sector="Energy">
                 <div class="corp_header">
                     <div class="corp_title">Exelon <a href="https://twitter.com/Exelon">(@Exelon)</a></div>
                     <div class="corp_sector">Sector: Energy</div>
@@ -1215,7 +1215,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="northropgrumman" class="corp_section">
+            </div><div id="northropgrumman" class="corp_section" sector="Aerospace & Defense">
                 <div class="corp_header">
                     <div class="corp_title">Northrop Grumman <a href="https://twitter.com/northropgrumman">(@northropgrumman)</a></div>
                     <div class="corp_sector">Sector: Aerospace & Defense</div>
@@ -1228,7 +1228,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="CapitalOne" class="corp_section">
+            </div><div id="CapitalOne" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">Capital One Financial <a href="https://twitter.com/CapitalOne">(@CapitalOne)</a></div>
                     <div class="corp_sector">Sector: Financials</div>
@@ -1241,7 +1241,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="abbvie" class="corp_section">
+            </div><div id="abbvie" class="corp_section" sector="Health Care">
                 <div class="corp_header">
                     <div class="corp_title">AbbVie <a href="https://twitter.com/abbvie">(@abbvie)</a></div>
                     <div class="corp_sector">Sector: Health Care</div>
@@ -1254,7 +1254,7 @@
                         <li><a href="https://google.com">Corporate tweet statement</a></li>
                     </ul>
                 </div>
-            </div><div id="StoneX_Official" class="corp_section">
+            </div><div id="StoneX_Official" class="corp_section" sector="Financials">
                 <div class="corp_header">
                     <div class="corp_title">StoneX <a href="https://twitter.com/StoneX_Official">(@StoneX_Official)</a></div>
                     <div class="corp_sector">Sector: Financials</div>

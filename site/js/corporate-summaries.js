@@ -31,6 +31,16 @@ $(document).ready(function () {
     }
   });
 
+  $('#sector_filter').change(function() {
+    new_sector = $('#sector_filter').val();
+    if (new_sector == '') {
+      $('.corp_section').css({'display': 'block'})
+    } else {  
+      $('.corp_section').css({'display': 'none'})
+      $(`[sector=${new_sector}]`).css({'display': 'block'})
+    }
+  });
+
   // set the dimensions and margins of the graph
   var margin = { top: 35, right: 60, bottom: 30, left: 60 },
     width = 650 - margin.left - margin.right;
