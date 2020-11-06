@@ -1,4 +1,10 @@
+function check_mobile() {
+    var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+    if (mobile) { alert("This page is meant to be viewed on a desktop. Some features will not be available on a mobile device."); } 
+}
+
 $(document).ready(function () {
+  check_mobile();
   // set the dimensions and margins of the graph
   var margin = { top: 35, right: 60, bottom: 30, left: 60 },
     width = 650 - margin.left - margin.right;
