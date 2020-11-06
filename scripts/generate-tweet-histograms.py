@@ -19,7 +19,7 @@ import matplotlib.units as munits
 import matplotlib.dates as mdates
 import datetime
 
-def generate_company_chart(company, handle, sector, FIGURE_DIR, df_t):
+def generate_company_chart(company, handle, sector, FIGURE_DIR, df_t, df_b):
     df = df_t[(df_t['Corporation'] == company)].copy()
     df = df[~pd.isna(df['Racial Justice'])]
     df['date'] = df['Datetime'].dt.date
@@ -66,6 +66,13 @@ def generate_company_chart(company, handle, sector, FIGURE_DIR, df_t):
     df_o = df[output_columns]
     df_o['date'] = df_o['date'].astype(str)
     df_o['ID'] = df_o['ID'].astype(str)
+    tag_cols = ['BLM', 'Juneteenth', 'Money', 'Formal Statement']
+    df_o['tags'] = df_o.apply(
+        lambda r:
+            '' if not r['Racial Justice'] else
+            ';'.join([k for k, v in df_b.loc[int(r['ID'])].iteritems() if v and (k in tag_cols)]),
+        axis=1
+    )
 
     return {
         'handle': handle,
@@ -86,11 +93,12 @@ def main():
 
     df_c = pd.read_csv(pjoin(DATA_DIR, 'fortune-100.csv')).dropna()
     df_t = pd.read_csv(pjoin(DATA_DIR, 'fortune-100-tweets.csv'), parse_dates=['Datetime'])
+    df_b = pd.read_csv(pjoin(DATA_DIR, 'blm-tweets.csv'), index_col='ID')
 
     figure_json = {}
     for i, row in df_c.iterrows():
         figure_json[row['Corporation']] = generate_company_chart(
-            row['Corporation'], row['Handle'], row['Sector'], FIGURE_DIR, df_t)
+            row['Corporation'], row['Handle'], row['Sector'], FIGURE_DIR, df_t, df_b)
 
     with open(HISTOGRAM_JSON_PATH, 'w') as f:
         json.dump(figure_json, f, indent=4)
