@@ -5,6 +5,17 @@ function check_mobile() {
 
 $(document).ready(function () {
   check_mobile();
+
+  // Add control box functionality
+  $('#hide_context').change(function() {
+    if(this.checked) {
+      $('.corp_context').css({'display': 'none'})
+    }
+    else {
+      $('.corp_context').css({'display': 'block'})
+    }
+  });
+
   // set the dimensions and margins of the graph
   var margin = { top: 35, right: 60, bottom: 30, left: 60 },
     width = 650 - margin.left - margin.right;
@@ -19,6 +30,7 @@ $(document).ready(function () {
       d3.json(
         "https://raw.githubusercontent.com/kmcelwee/fortune-100-blm-report/main/docs/histogram.json",
         function (histogram_data) {
+          // Iterate through corporations
           for (company in histogram_data) {
             company_data = histogram_data[company];
             var handle = company_data["handle"];
