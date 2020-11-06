@@ -56,18 +56,17 @@ body {
     font-weight: 400;
     font-style: normal;
     color: lightgrey;
-    font-size: 15pt;
-    max-width: 500px;
+    font-size: 18pt;
+    max-width: 850px;
 }
 
 #title_container {
-    max-width: 750px;
+    max-width: 850px;
+    padding: 30px;
 }
 
-
 #directory_container {
-    width: 750px;
-    margin: 20px;
+    margin-top: 15px;
 }
 
 #directory_container a {
@@ -76,7 +75,7 @@ body {
     font-style: normal;
     color: white;
     text-decoration: none;
-    font-size: 15pt;
+    font-size: 18pt;
 }
 
 #directory_container a:hover {
