@@ -37,7 +37,7 @@ $(document).ready(function () {
       $('.corp_section').css({'display': 'block'})
     } else {  
       $('.corp_section').css({'display': 'none'})
-      $(`[sector=${new_sector}]`).css({'display': 'block'})
+      $(`[sector="${new_sector}"]`).css({'display': 'block'})
     }
   });
 
