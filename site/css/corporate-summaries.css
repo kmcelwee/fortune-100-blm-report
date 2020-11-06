@@ -6,6 +6,19 @@
     margin: 20px;
 }
 
+#all_material {
+    max-width: 650px;
+    margin: 10px auto;
+}
+
+#control_box {
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 3px 3px 3px black;
+}
+
 .company_histogram {
     margin: 10px;
 }
@@ -25,19 +38,14 @@
     pointer-events: none;
 }
 
-#histogram-explainer {
-    max-width: 650px;
-    margin: 10px auto;
-}
+#histogram-explainer {}
 
 
 .corp_section {
     max-width: 650px;
-    margin: 10px auto;
 }
 
-.corp_header {
-}
+.corp_header {}
 
 .corp_title {
     font-size: 20px;
@@ -49,6 +57,4 @@
     color: grey;
 }
 
-.corp_context {
-
-}
+.corp_context {}

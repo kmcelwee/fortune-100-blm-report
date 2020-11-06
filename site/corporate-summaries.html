@@ -34,6 +34,7 @@
             <div id="subtitle_text" style="max-width: 600px">Interactive tweet plots that show how each company reacted from May 25 to July 25</div>
         </div>
     </div>
+    <div id="all_material">
     <div id="histogram-explainer">
         <p>Below are tweet summaries from May 25 to July 25 for the 91 members of the Fortune 100 that have active Twitter accounts. Hover over each to view the tweet text, and click to open the tweet on Twitter. If the tweet has been deleted, you will be directed to an error page, but the text and media are still available in the dataset. Each plot follows the following legend:</p>
         <p style="text-align: center;">
@@ -41,6 +42,12 @@
         </p>
         <p>Where a "Racial Justice Tweet" answers the question: "Does this tweet address the subject of racial inequity as it relates to the death of George Floyd and subsequent protests?" The gray area and nuances surrounding this question are parsed in detail on <a href="https://github.com/kmcelwee/fortune-100-blm-dataset">the dataset's page on GitHub.</a></p>
     </div>
+
+    <div id="control_box">
+        <input type="checkbox" id="hide_context" name="hide_context" value="hide_context">
+          <label for="hide_context">Hide text summary.</label>
+    </div>
+
     <div id="all_histograms">
         <div id="Walmart" class="corp_section">
             <div class="corp_header">
@@ -1226,6 +1233,7 @@
                 </ul>
             </div>
         </div>
+    </div>
     </div>
     <footer>
         <div><a href="https://github.com/kmcelwee/fortune-100-blm-report"><img src="img/github.svg" alt=""></a></div>
