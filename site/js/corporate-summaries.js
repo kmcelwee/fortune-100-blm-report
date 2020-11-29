@@ -41,6 +41,18 @@ $(document).ready(function () {
     }
   });
 
+  $('#tag_highlighter').change(function() {
+    new_tag_highlight = $('#tag_highlighter').val();
+    
+    d3.selectAll('circles').style('stroke', 'none')
+    
+    d3.selectAll(`[tags*="${new_tag_highlight}"]`)
+      .style('stroke', 'blue')
+      .style('stroke-width', 13)
+      .style('stroke-opacity', 0.3)
+
+  })
+
   // set the dimensions and margins of the graph
   var margin = { top: 35, right: 60, bottom: 30, left: 60 },
     width = 650 - margin.left - margin.right;
@@ -108,6 +120,7 @@ $(document).ready(function () {
               )
               .attr("target", "_blank")
               .append("circle")
+              .attr("tags", (d) => d.tags)
               .attr("cx", (d) => x(new Date(d["date"])))
               .attr("cy", (d) => y(d.count - 0.25))
               .attr("r", 3)
@@ -130,16 +143,13 @@ $(document).ready(function () {
 
                 // expand on hover
                 d3.select(this)
-                  .style("stroke", (d) =>
-                    d["Racial Justice"] ? "silver" : "black"
-                  )
                   .attr("r", 5);
               })
 
               .on("mouseout", function (d) {
                 div.transition().duration(0).style("opacity", 0);
                 // expand on hover
-                d3.select(this).style("stroke", "none").attr("r", 3);
+                d3.select(this).attr("r", 3);
               });
           }
         }
