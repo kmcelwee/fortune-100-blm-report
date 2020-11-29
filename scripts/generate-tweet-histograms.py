@@ -19,9 +19,8 @@ import matplotlib.units as munits
 import matplotlib.dates as mdates
 import datetime
 
-def generate_company_chart(company, handle, sector, FIGURE_DIR, df_t, df_b):
+def generate_company_chart(company, handle, sector, FIGURE_DIR, df_t):
     df = df_t[(df_t['Corporation'] == company)].copy()
-    df = df[~pd.isna(df['Racial Justice'])]
     df['date'] = df['Datetime'].dt.date
 
     # a too-complicated way of getting counts for each day
@@ -35,7 +34,6 @@ def generate_company_chart(company, handle, sector, FIGURE_DIR, df_t, df_b):
         new_col.extend(l)
     df['count'] = new_col
 
-    
     colormap = ['lightgrey' if x == 0 else 'black' for x in pd.Categorical(df['Racial Justice']).codes]
     max_count = df['count'].max()
     
@@ -67,12 +65,9 @@ def generate_company_chart(company, handle, sector, FIGURE_DIR, df_t, df_b):
     df_o['date'] = df_o['date'].astype(str)
     df_o['ID'] = df_o['ID'].astype(str)
     tag_cols = ['BLM', 'Juneteenth', 'Money', 'Formal Statement']
-    df_o['tags'] = df_o.apply(
-        lambda r:
-            '' if not r['Racial Justice'] else
-            ';'.join([k for k, v in df_b.loc[int(r['ID'])].iteritems() if v and (k in tag_cols)]),
-        axis=1
-    )
+    df_o['tags'] = [
+        ';'.join([col for col in tag_cols if r[col] and pd.notnull(r[col])]) for i, r in df.iterrows()
+    ]
 
     return {
         'handle': handle,
@@ -92,13 +87,13 @@ def main():
     munits.registry[datetime.datetime] = converter
 
     df_c = pd.read_csv(pjoin(DATA_DIR, 'fortune-100.csv')).dropna()
-    df_t = pd.read_csv(pjoin(DATA_DIR, 'fortune-100-tweets.csv'), parse_dates=['Datetime'])
-    df_b = pd.read_csv(pjoin(DATA_DIR, 'blm-tweets.csv'), index_col='ID')
+    df_t = pd.read_csv(pjoin(DATA_DIR, 'fortune-100-tweets.csv'),
+        parse_dates=['Datetime'])
 
     figure_json = {}
-    for i, row in df_c.iterrows():
+    for _, row in df_c.iterrows():
         figure_json[row['Corporation']] = generate_company_chart(
-            row['Corporation'], row['Handle'], row['Sector'], FIGURE_DIR, df_t, df_b)
+            row['Corporation'], row['Handle'], row['Sector'], FIGURE_DIR, df_t)
 
     with open(HISTOGRAM_JSON_PATH, 'w') as f:
         json.dump(figure_json, f, indent=4)
