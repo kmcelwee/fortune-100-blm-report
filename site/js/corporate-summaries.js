@@ -18,6 +18,18 @@ function parse_tags(tags) {
   }
 }
 
+function reset_form() {
+  $('#tag_highlighter').val('')
+  $('#sector_filter').val('')
+  $('#hide_context').prop('checked', false);
+
+  // HACK: for some reason these changes do not register their attached functions
+  //   so we'll have to reset everything manually
+  $('.corp_section').css({'display': 'block'})
+  $('.corp_context').css({'display': 'block'})
+  d3.selectAll('circle').style('stroke', 'none')
+}
+
 $(document).ready(function () {
   check_mobile();
 
@@ -44,7 +56,7 @@ $(document).ready(function () {
   $('#tag_highlighter').change(function() {
     new_tag_highlight = $('#tag_highlighter').val();
     
-    d3.selectAll('circles').style('stroke', 'none')
+    d3.selectAll('circle').style('stroke', 'none')
     
     d3.selectAll(`[tags*="${new_tag_highlight}"]`)
       .style('stroke', 'blue')
