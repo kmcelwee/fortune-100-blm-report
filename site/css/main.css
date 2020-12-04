@@ -64,12 +64,12 @@ nav div {
     padding: 10px;
 }
 
-nav a {
+.white_link {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
-nav a:hover {
+.white_link:hover {
     color: white;
 }

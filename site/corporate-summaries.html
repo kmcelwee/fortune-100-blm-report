@@ -29,8 +29,8 @@
 </head>
 <body>
     <nav>
-        <div id="nav_home"><a href="index.html"><img src="img/home.svg" alt="home" width="30px"></a></div>
-        <div id="nav_summaries"><a href="report.html">Read the report -></a></div>
+        <div id="nav_home"><a href="index.html" class="white_link"><img src="img/home.svg" alt="home" width="30px"></a></div>
+        <div id="nav_summaries"><a href="report.html" class="white_link">Read the report -></a></div>
     </nav>
     <div class="header">
         <div id="title_container">
@@ -96,6 +96,14 @@
                 </select>
             </div>
             <input type="reset" onclick="reset_form()">
+
+            <div id="jump_to">
+                <details>
+                <summary onclick="update_jump_to()">Jump to:</summary>
+                    <div id="jump_to_items">
+                    </div>
+                </details>
+            </div>
         </div>
 
         <div id="all_histograms">

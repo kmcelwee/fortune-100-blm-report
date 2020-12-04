@@ -1,3 +1,5 @@
+var handle2company = {}
+
 function check_mobile() {
     var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
     if (mobile) { alert("This page is meant to be viewed on a desktop. Some features will not be available on a mobile device."); } 
@@ -30,8 +32,40 @@ function reset_form() {
   d3.selectAll('circle').style('stroke', 'none')
 }
 
+function update_jump_to() {
+  var visible_blocks = $('.corp_section').filter(function() { return $(this).css('display') == 'block' });
+
+  var jump_to_list = [];
+  visible_blocks.each(function() {
+    
+    var handle = $(this).attr('id')
+    var jump_to_string = `<div class="jump_to_item" id="jump_to_${handle}"><a class="white_link" href="#${handle}">${handle2company[handle]}</a></div>`
+    jump_to_list.push(jump_to_string)
+  });
+ 
+  $('#jump_to_items').html(jump_to_list.join(' · ')) // 
+}
+
+function add_jump_to_listeners() {
+  // To update jump_to, listen for style updates to all sector blocks
+  var observer = new MutationObserver(function(mutations) {
+    // mutations.forEach(function(mutationRecord) {
+    //     console.log('style changed!');
+    // });  
+    update_jump_to();
+  });
+
+  var targets = document.getElementsByClassName('corp_section');
+  Array.from(targets).forEach(function (target) {
+    // console.log(target);
+    observer.observe(target, { attributes : true, attributeFilter : ['style'] });
+  })
+}
+
+
 $(document).ready(function () {
   check_mobile();
+  add_jump_to_listeners();
 
   // Add control box functionality
   $('#hide_context').change(function() {
@@ -85,12 +119,13 @@ $(document).ready(function () {
             var handle = company_data["handle"];
             var height = company_data["max_count"] * 10;
 
+            handle2company[handle] = company
+
             // append the svg object to the body of the page
             var svg = d3
               .select(`#${handle}-histogram`)
               .append("svg")
               .attr("class", "company_histogram")
-              .attr("id", company_data["handle"])
               .attr("width", width + margin.left + margin.right)
               .attr("height", height + margin.top + margin.bottom)
               .append("g")
@@ -167,5 +202,8 @@ $(document).ready(function () {
         }
       );
     }
+
+    
   );
+  
 });

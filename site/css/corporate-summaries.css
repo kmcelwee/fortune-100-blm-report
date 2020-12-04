@@ -16,11 +16,26 @@ html {
 }
 
 #control_box {
-    background: #333;
+    background: black;
     color: white;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 3px 3px 3px black;
+}
+
+
+#jump_to {
+    margin: 10px;
+}
+
+#jump_to_items {
+    padding: 10px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+}
+.jump_to_item {
+    display: inline-block;
 }
 
 .company_histogram {
