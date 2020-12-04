@@ -6,6 +6,10 @@
     margin: 20px;
 }
 
+html {
+    background: red;
+}
+
 #all_material {
     max-width: 650px;
     margin: 10px auto;
