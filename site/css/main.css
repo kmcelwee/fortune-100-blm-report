@@ -62,3 +62,27 @@ footer div {
     padding: 10px;
     width: 100%;
 }
+
+nav {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color: black;
+    font: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav div {
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
