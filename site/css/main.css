@@ -35,6 +35,10 @@ footer div {
     max-width: 700px;
 }
 
+label {
+    font-weight: bold;
+}
+
 #title_text {
     font-family: 'Arial Black', serif;
     color: white;
@@ -67,7 +71,6 @@ nav div {
 .white_link {
     text-decoration: none;
     color: white;
-    font-weight: bold;
 }
 
 .white_link:hover {

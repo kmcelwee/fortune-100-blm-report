@@ -26,9 +26,6 @@ html {
 
 #jump_to_items {
     padding: 10px;
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* justify-content: space-around; */
 }
 .jump_to_item {
     display: inline-block;
