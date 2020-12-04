@@ -35,27 +35,25 @@
     <div class="header">
         <div id="title_container">
             <div id="title_text">Corporate Summaries</div>
-            <div id="subtitle_text" style="max-width: 600px">Interactive tweet plots that show how each company reacted from May 25 to July 25</div>
+            <div id="subtitle_text">Interactive tweet plots to visualize the corporate reaction</div>
         </div>
     </div>
-    <div id="all_material">
-        <div id="histogram-explainer">
-            <p>Below are tweet summaries from May 25 to July 25 for the 91 members of the Fortune 100 that have active Twitter accounts. Hover over each data point to view the tweet text, and click to open the tweet on Twitter. If the tweet has been deleted, you will be directed to an error page, but the text and media are still available in the dataset. Each plot follows the following legend:</p>
-            <p style="text-align: center;">
-                <img src="img/histogram-legend.png" alt="" style="width: 200px">
-            </p>
-            <p>Where a "Racial Justice Tweet" answers the question: "Does this tweet address the subject of racial inequity as it relates to the death of George Floyd and subsequent protests?" The gray area and nuances surrounding this question are parsed in detail on <a href="https://github.com/kmcelwee/fortune-100-blm-dataset">the dataset's page on GitHub.</a></p>
-            <p>
-                Each Racial Justice Tweet is also marked with the following tags:
-                <ul>
-                    <div><span class="badge badge-pill badge-light">BLM</span> Does this tweet or the media attached to this tweet explicitly contain the words "Black Lives Matter"?</div>
-                    <div><span class="badge badge-pill badge-danger">Juneteenth</span> Does this tweet address Juneteenth?</div>
-                    <div><span class="badge badge-pill badge-success">Money</span> Does this tweet mention the corporation's donations to causes (internal or external) addressing racial inequity?</div>
-                    <div><span class="badge badge-pill badge-primary">Formal Statement</span> Does this tweet quote a leader of the company like a CFO or CEO? Is it a press release?</div>
-                </ul>
-            </p>
-            <p>You're welcome to filter by sector and hide the summary text to make comparison easier.</p>
-        </div>
+    <div id="content">
+        <p>Below are tweet summaries from May 25 to July 25 for the 91 members of the Fortune 100 that have active Twitter accounts. Hover over each data point to view the tweet text, and click to open the tweet on Twitter. If the tweet has been deleted, you will be directed to an error page, but the text and media are still available in the dataset. Each plot follows the following legend:</p>
+        <p style="text-align: center;">
+            <img src="img/histogram-legend.png" alt="" style="width: 200px">
+        </p>
+        <p>Where a "Racial Justice Tweet" answers the question: "Does this tweet address the subject of racial inequity as it relates to the death of George Floyd and subsequent protests?" The gray area and nuances surrounding this question are parsed in detail on <a href="https://github.com/kmcelwee/fortune-100-blm-dataset">the dataset's page on GitHub.</a></p>
+        <p>
+            Each Racial Justice Tweet is also marked with the following tags:
+            <ul>
+                <div><span class="badge badge-pill badge-light">BLM</span> Does this tweet or the media attached to this tweet explicitly contain the words "Black Lives Matter"?</div>
+                <div><span class="badge badge-pill badge-danger">Juneteenth</span> Does this tweet address Juneteenth?</div>
+                <div><span class="badge badge-pill badge-success">Money</span> Does this tweet mention the corporation's donations to causes (internal or external) addressing racial inequity?</div>
+                <div><span class="badge badge-pill badge-primary">Formal Statement</span> Does this tweet quote a leader of the company like a CFO or CEO? Is it a press release?</div>
+            </ul>
+        </p>
+        <p>You're welcome to filter by sector and hide the summary text to make comparison easier.</p>
 
         <div id="control_box">
             <div>

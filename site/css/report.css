@@ -54,6 +54,7 @@
     color: white;
     font-style: italic;
     width: 100%;
+    margin-top: 5px;
 }
 
 .hover-histogram-container {
@@ -72,22 +73,6 @@
     transform: scale(1.1)
 }
 
-h2 {
-    width: 600px;
-}
-
-#report {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-p {
-    width: 600px;
-}
 
 .arrow {
     height: 10px;
@@ -116,7 +101,7 @@ p {
     transition: max-height 500ms;
 }
 .sidenote-text {
-    max-width: 650px;
+    max-width: 600px;
 }
 
 .sidenote-toggle {
