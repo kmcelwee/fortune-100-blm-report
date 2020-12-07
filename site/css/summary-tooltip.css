@@ -1,0 +1,23 @@
+.summary-tooltip-container {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.summary-tooltip-icon {
+    width: 20px;
+}
+.summary-tooltip-tooltip {
+    /* display: none; */
+    width: 100vw;
+    background: lightgrey;
+    padding: 10px;
+    display: inline-block;
+    text-align: right;
+}
+
+.summary-tooltip-link {
+    font-size: smaller;
+    font-weight: normal;
+    
+}

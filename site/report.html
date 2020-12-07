@@ -17,6 +17,7 @@
 
     <!-- JS -->
     <script type="text/javascript" src="js/report.js"></script>
+    <script src="js/summary-tooltip.js"></script>
 
 
     <!-- Twitter OEmbed -->
@@ -31,6 +32,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/report.css">
+    <link rel="stylesheet" href="css/summary-tooltip.css">
 </head>
 <body>
     <nav>
@@ -65,15 +67,20 @@
         <h2>The quiet corporations</h2>
 
         <p>As one might expect, many corporations did not make any public statement about the protests or make charitable donations. But this was a surprisingly small subset of the Fortune 100. Only 6 of the 91 companies did not make any comment, both on and off Twitter: 
-            Lockheed Martin 
-            <span class="hover-histogram-container">
+             
+            <span class="summary-tooltip-container">Lockheed Martin
+                <img class="summary-tooltip-icon" src="img/icon-histogram.png" alt="" width="20px">
+                <span class="summary-tooltip-tooltip">
+                    <img  src="../figures/tweet-histograms/LockheedMartin.png" alt="" width="100%">
+                        <a class="summary-tooltip-link" href="corporate-summaries.html#CapitalOne">View an interactive version of this graph -></a> 
+                </span>
+                
+            </span>,     
+            <span class="hover-histogram-container">General Dynamics
                 <img class="hover-histogram-icon" src="img/icon-histogram.png" alt="" width="20px">
-                <img class="hover-histogram-tooltip" src="../figures/tweet-histograms/LockheedMartin.png" width="600px" alt="">
-            </span>, 
-            General Dynamics 
-            <span class="hover-histogram-container">
-                <img class="hover-histogram-icon" src="img/icon-histogram.png" alt="" width="20px">
-                <img class="hover-histogram-tooltip" src="../figures/tweet-histograms/generaldynamics.png" width="600px" alt="">
+                <div class="hover-histogram-tooltip">
+                    <img  src="../figures/tweet-histograms/generaldynamics.png" width="600px" alt="">
+                </div>
             </span>, 
             Valero Energy
             <span class="hover-histogram-container">
