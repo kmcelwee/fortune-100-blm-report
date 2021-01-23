@@ -2,7 +2,7 @@
     margin: 0px;
     box-sizing: border-box;
     padding: 0px;
-font-family: acumin-pro, sans-serif;
+    font-family: acumin-pro, sans-serif;
 }
 
 body {
@@ -81,4 +81,16 @@ body {
 #directory_container a:hover {
     font-weight: 400;
     /*transform: scale(1.1);*/
+}
+
+@media only screen and (max-width: 768px) {
+    #title_text {
+        font-size: 36pt;
+    }
+    #subtitle_text {
+        font-size: 15pt;   
+    }
+    #directory_container a {
+        font-size: 16px;
+    }
 }
