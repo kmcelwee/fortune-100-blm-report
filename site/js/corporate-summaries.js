@@ -126,8 +126,8 @@ $(document).ready(function () {
               .select(`#${handle}-histogram`)
               .append("svg")
               .attr("class", "company_histogram")
-              .attr("width", width + margin.left + margin.right)
-              .attr("height", height + margin.top + margin.bottom)
+              .attr('viewBox', `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`)
+              .attr('preserveAspectRatio', 'xMidYMid meet')
               .append("g")
               .attr(
                 "transform",
@@ -161,8 +161,6 @@ $(document).ready(function () {
               .data(company_data["tweets"])
               .enter()
               .append("a")
-              // .attr('viewBox', '0 0 400 400')
-              // .attr('preserveAspectRatio', 'xMidYMid meet')
               .attr(
                 "xlink:href",
                 (d) => `https://twitter.com/att/status/${d.ID}`
