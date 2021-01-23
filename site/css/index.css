@@ -44,7 +44,7 @@ body {
 }
 
 #title_text {
-    font-family: 'Arial Black', serif;
+    font-family: 'Arial Black', sans-serif;
     color: white;
     font-size: 42pt;
     text-align: left;
