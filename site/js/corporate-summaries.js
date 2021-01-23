@@ -100,8 +100,8 @@ $(document).ready(function () {
   })
 
   // set the dimensions and margins of the graph
-  var margin = { top: 35, right: 60, bottom: 30, left: 60 },
-    width = 650 - margin.left - margin.right;
+  var margin = { top: 5, right: 5, bottom: 20, left: 15 },
+    width = 550 - margin.left - margin.right;
 
   var minDate = new Date("2020-05-24");
   var maxDate = new Date("2020-07-26");
@@ -161,6 +161,8 @@ $(document).ready(function () {
               .data(company_data["tweets"])
               .enter()
               .append("a")
+              // .attr('viewBox', '0 0 400 400')
+              // .attr('preserveAspectRatio', 'xMidYMid meet')
               .attr(
                 "xlink:href",
                 (d) => `https://twitter.com/att/status/${d.ID}`
