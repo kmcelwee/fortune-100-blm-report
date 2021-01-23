@@ -10,7 +10,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url("../img/header-2000.png");
-    min-height: 100.5vh;
+    min-height: 100vh;
     background-color: black;
 }
 
@@ -22,7 +22,6 @@ body {
     height: 100vh;
     background: rgba(0, 0, 0, .75);
 
-    opacity: 0;
     transition: opacity 500ms;
     display: flex;
     align-items: center;
@@ -80,12 +79,12 @@ body {
 
 #directory_container a:hover {
     font-weight: 400;
-    /*transform: scale(1.1);*/
 }
 
 @media only screen and (max-width: 768px) {
     #title_text {
         font-size: 36pt;
+        color: blue;
     }
     #subtitle_text {
         font-size: 15pt;   
