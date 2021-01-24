@@ -20,6 +20,10 @@ html {
     max-width: 600px;
 }
 
+#control_box div {
+    margin: 3px;
+}
+
 #jump_to {
     margin: 10px;
 }
@@ -71,7 +75,12 @@ html {
     color: grey;
 }
 
-.corp_context {}
+.corp_context {
+    margin: 10px;
+    padding: 20px 20px 10px 20px;
+    font-style: italic;
+    box-shadow: -2px 0px 1px grey;
+}
 
 .tag-tooltip-container {
     font-size: 16px;
