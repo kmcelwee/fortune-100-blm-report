@@ -12,7 +12,6 @@ function parse_tags(tags) {
     tags.split(';').forEach(function(tag) {
       if (tag == 'Money') { tag_html += `<span class="badge badge-pill badge-success">Money</span>` }
       if (tag == 'BLM') { tag_html += `<span class="badge badge-pill badge-light">BLM</span>` }
-      if (tag == 'Formal Statement') { tag_html += `<span class="badge badge-pill badge-primary">Formal Statement</span>` } 
       if (tag == 'Juneteenth') { tag_html += `<span class="badge badge-pill badge-danger">Juneteenth</span>` }
     })
     tag_html += "</div>"
