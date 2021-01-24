@@ -5,7 +5,6 @@
     --twitter-blue: #1DA1F2;
 }
 
-
 .header {
     width: 100%;
     background-image: url('../img/title-header.png');
@@ -24,15 +23,6 @@
     margin-bottom: 5px;
 }
 
-#title_container {
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 700px;
-    justify-content: center;
-}
 
 #title_text {
     font-family: 'Arial Black', sans-serif;
@@ -55,56 +45,4 @@
     font-style: italic;
     width: 100%;
     margin-top: 5px;
-}
-
-.hover-histogram-container {
-    font-weight: bold;
-}
-
-.hover-histogram-tooltip {
-    display: none;
-}
-
-.hover-histogram-container:hover .hover-histogram-tooltip {
-    display: inline;
-}
-
-.hover-histogram-container:hover .hover-histogram-icon {
-    transform: scale(1.1)
-}
-
-
-.arrow {
-    height: 10px;
-    cursor: pointer;
-    transform: none;
-    transition: 250ms;
-}
-.arrow-rotate {
-    transform: rotate(90deg);
-}
-
-.sidenote {    
-    box-shadow: inset  0px 5px 20px black;
-    width: 100%;
-    background: #333;
-    padding: 30px;
-    margin: 0px auto;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    max-height: 0px;
-    display: none;
-
-    transition: max-height 500ms;
-}
-.sidenote-text {
-    max-width: 600px;
-}
-
-.sidenote-toggle {
-    max-height: 750px;
-    display: flex;
 }
