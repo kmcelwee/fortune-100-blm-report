@@ -64,7 +64,7 @@ def generate_company_chart(company, handle, sector, FIGURE_DIR, df_t):
     df_o = df[output_columns]
     df_o['date'] = df_o['date'].astype(str)
     df_o['ID'] = df_o['ID'].astype(str)
-    tag_cols = ['BLM', 'Juneteenth', 'Money', 'Formal Statement']
+    tag_cols = ['BLM', 'Juneteenth', 'Money']
     df_o['tags'] = [
         ';'.join([col for col in tag_cols if r[col] and pd.notnull(r[col])]) for i, r in df.iterrows()
     ]
