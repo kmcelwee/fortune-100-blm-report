@@ -80,6 +80,7 @@ def main():
     DATA_DIR = 'fortune-100-blm-dataset/data'
     FIGURE_DIR = 'figures/tweet-histograms'
     HISTOGRAM_JSON_PATH = 'docs/histogram.json'
+    MAPPER_JSON_PATH = 'docs/handle-mapper.json'
 
     converter = mdates.ConciseDateConverter()
     munits.registry[np.datetime64] = converter
@@ -100,11 +101,19 @@ def main():
     for _, row in df_c.iterrows():
         handle2corp[row['Handle']] = row['Corporation']
         corp2handle[row['Corporation']] = row['Handle']
+    mapper_json = {
+     'handle2corp': handle2corp,
+     'corp2handle': corp2handle
+    }
+    with open(MAPPER_JSON_PATH, 'w') as f:
+        json.dump(mapper_json, f, indent=4)  
+
     figure_json['handle2corp'] = handle2corp
     figure_json['corp2handle'] = corp2handle
 
     with open(HISTOGRAM_JSON_PATH, 'w') as f:
         json.dump(figure_json, f, indent=4)
+        
 
 if __name__ == '__main__':
     main()
