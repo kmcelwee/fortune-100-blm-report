@@ -1,4 +1,5 @@
-var handle2company = {}
+var handle2corp = {};
+var corp2handle = {};
 
 function check_mobile() {
     var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
@@ -38,7 +39,7 @@ function update_jump_to() {
   visible_blocks.each(function() {
     
     var handle = $(this).attr('id')
-    var jump_to_string = `<div class="jump_to_item" id="jump_to_${handle}"><a class="white_link" href="#${handle}">${handle2company[handle]}</a></div>`
+    var jump_to_string = `<div class="jump_to_item" id="jump_to_${handle}"><a class="white_link" href="#${handle}">${handle2corp[handle]}</a></div>`
     jump_to_list.push(jump_to_string)
   });
  
@@ -112,13 +113,14 @@ $(document).ready(function () {
       d3.json(
         "https://raw.githubusercontent.com/kmcelwee/fortune-100-blm-report/main/docs/histogram.json",
         function (histogram_data) {
+          handle2corp = histogram_data['handle2corp']
+          corp2handle = histogram_data['corp2handle']
+
           // Iterate through corporations
           for (company in histogram_data) {
             company_data = histogram_data[company];
             var handle = company_data["handle"];
             var height = company_data["max_count"] * 10;
-
-            handle2company[handle] = company
 
             // append the svg object to the body of the page
             var svg = d3

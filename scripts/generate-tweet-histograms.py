@@ -95,6 +95,14 @@ def main():
         figure_json[row['Corporation']] = generate_company_chart(
             row['Corporation'], row['Handle'], row['Sector'], FIGURE_DIR, df_t)
 
+    # add mappers
+    handle2corp, corp2handle = {}, {}
+    for _, row in df_c.iterrows():
+        handle2corp[row['Handle']] = row['Corporation']
+        corp2handle[row['Corporation']] = row['Handle']
+    figure_json['handle2corp'] = handle2corp
+    figure_json['corp2handle'] = corp2handle
+
     with open(HISTOGRAM_JSON_PATH, 'w') as f:
         json.dump(figure_json, f, indent=4)
 
