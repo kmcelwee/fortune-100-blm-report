@@ -49,9 +49,6 @@ function update_jump_to() {
 function add_jump_to_listeners() {
   // To update jump_to, listen for style updates to all sector blocks
   var observer = new MutationObserver(function(mutations) {
-    // mutations.forEach(function(mutationRecord) {
-    //     console.log('style changed!');
-    // });  
     update_jump_to();
   });
 
