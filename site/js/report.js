@@ -1,8 +1,7 @@
 $.getJSON("https://raw.githubusercontent.com/kmcelwee/fortune-100-blm-report/main/docs/handle-mapper.json", (data) => {
     var corp2handle = data['corp2handle'];
     var handle2corp = data['handle2corp'];
-    console.log(corp2handle)
-    a = corp2handle
+
     $('.corp_link').each(function() {
         var handle = corp2handle[$(this).text()];
         if (!handle) {handle = $(this).attr('handle')}
