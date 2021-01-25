@@ -84,7 +84,6 @@ body {
 @media only screen and (max-width: 768px) {
     #title_text {
         font-size: 36pt;
-        color: blue;
     }
     #subtitle_text {
         font-size: 15pt;   
