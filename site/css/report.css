@@ -9,6 +9,17 @@
     width: 100%;
 }
 
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
+.bits {
+    height: 1.5em;
+    /*top: -30px;*/
+    vertical-align:text-top;
+}
+
 .header {
     width: 100%;
     background-image: url('../img/title-header.png');
