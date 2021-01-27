@@ -5,6 +5,10 @@
     --twitter-blue: #1DA1F2;
 }
 
+.chart {
+    width: 100%;
+}
+
 .header {
     width: 100%;
     background-image: url('../img/title-header.png');
