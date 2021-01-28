@@ -62,8 +62,16 @@ html {
 .corp_section {
     padding-top: 50px;
 }
+.response_status {
+    width: 20px;
+    cursor: pointer;
+}
 
-.corp_header {}
+.corp_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 
 .corp_title {
     font-size: 20px;
