@@ -8,6 +8,6 @@ $.getJSON("https://raw.githubusercontent.com/kmcelwee/fortune-100-blm-report/mai
         if (!handle) {console.log('PROBLEM!'); console.log($(this).text())}
         $(this).attr('href', `https://kmcelwee.github.io/fortune-100-blm-report/site/corporate-summaries.html#${handle}`)
         $(this).attr('target', '_blank')
-        $(this).append(`<img src="img/icon-histogram-2.png" alt="" class="histogram_icon">`)
+        $(this).append(`<img src="img/icon-histogram-2.png" alt="histogram icon" class="histogram_icon">`)
     })
 })
