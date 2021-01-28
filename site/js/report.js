@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    $('.header').html('')
-    $('#content').html('')
+    // $('.header').html('')
+    // $('#content').html('')
 })
 
 $.getJSON("https://raw.githubusercontent.com/kmcelwee/fortune-100-blm-report/main/docs/handle-mapper.json", (data) => {
