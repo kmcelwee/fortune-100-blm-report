@@ -4,3 +4,4 @@ debugging-notebooks/
 summaries/
 scratch/
 explore-dataset.nbconvert.ipynb
+run_jupyter.sh
